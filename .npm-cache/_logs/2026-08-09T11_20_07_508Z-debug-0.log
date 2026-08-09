@@ -1,0 +1,29 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.17.0
+2 info using node@v24.19.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npmrc
+5 silly config load:file:C:\Users\momon\.npmrc
+6 silly config load:file:C:\Users\momon\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm ci
+8 verbose argv "ci" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_20_07_508Z-
+10 verbose logfile C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_20_07_508Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+14 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+15 silly idealTree buildDeps
+16 verbose stack Error: ENOTEMPTY: directory not empty, rmdir 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\next-devtools\shared'
+17 error code ENOTEMPTY
+18 error syscall rmdir
+19 error path C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\next-devtools\shared
+20 error errno -4051
+21 error ENOTEMPTY: directory not empty, rmdir 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\next-devtools\shared'
+22 verbose cwd C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner
+23 verbose os Windows_NT 10.0.26200
+24 verbose node v24.19.0
+25 verbose npm  v11.17.0
+26 verbose exit -4051
+27 verbose code -4051
+28 error A complete log of this run can be found in: C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_20_07_508Z-debug-0.log

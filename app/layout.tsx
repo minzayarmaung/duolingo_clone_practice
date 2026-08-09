@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './library.css';
+import './list-picker.css';
 
 export const metadata: Metadata = { title: 'English Speaking Partner', description: 'Friendly speaking practice' };
 

@@ -8,3 +8,7 @@ npm run dev
 ```
 
 Open `http://localhost:3000`. Microphone recording uses the browser MediaRecorder API and needs browser permission.
+
+## Practice picture library
+
+Place `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`, or `.avif` images in `public/practice-images/`. The app automatically shows them in the picture library, including preview, selection, and **Random photo** support. It is safe to leave the folder empty until you are ready to add photos.

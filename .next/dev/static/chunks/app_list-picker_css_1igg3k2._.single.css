@@ -1,0 +1,116 @@
+/* [project]/app/list-picker.css [app-client] (css) */
+.list-picker-layout {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 22px;
+  display: grid;
+}
+
+.library-pane, .preview-pane {
+  min-width: 0;
+}
+
+.library-list {
+  background: #fff;
+  border: 2px solid #e2e7ea;
+  border-bottom-width: 5px;
+  border-radius: 24px;
+  flex-direction: column;
+  gap: 8px;
+  height: 380px;
+  padding: 10px;
+  display: flex;
+  overflow-y: auto;
+}
+
+.list-photo {
+  color: #475361;
+  text-align: left;
+  background: #f7f8f8;
+  border: 2px solid #0000;
+  border-radius: 15px;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  min-height: 66px;
+  padding: 6px;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+}
+
+.list-photo:hover {
+  background: #f0fae7;
+}
+
+.list-photo.chosen {
+  color: #468d0b;
+  background: #effbe5;
+  border-color: #58cc02;
+}
+
+.list-photo img {
+  object-fit: cover;
+  border-radius: 10px;
+  flex: none;
+  width: 52px;
+  height: 52px;
+}
+
+.list-photo span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  overflow: hidden;
+}
+
+.list-photo svg {
+  color: #58b50c;
+  flex: none;
+}
+
+.preview-pane .drop {
+  height: 380px;
+}
+
+.preview-start {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  display: flex;
+}
+
+.preview-start > span {
+  color: #57a416;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+}
+
+@media (max-width: 720px) {
+  .list-picker-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .library-list {
+    height: 270px;
+  }
+
+  .preview-pane .drop {
+    height: 285px;
+  }
+
+  .preview-start {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .preview-start .btn {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app_list-picker_css_1igg3k2._.single.css.map*/

@@ -1,0 +1,294 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.17.0
+2 info using node@v24.19.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npmrc
+5 silly config load:file:C:\Users\momon\.npmrc
+6 silly config load:file:C:\Users\momon\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install next@16.3.0
+8 verbose argv "install" "next@16.3.0" "--force" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_20_23_045Z-
+10 verbose logfile C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_20_23_045Z-debug-0.log
+11 warn using --force Recommended protections disabled.
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+15 silly idealTree buildDeps
+16 silly fetch manifest next@16.3.0
+17 silly packumentCache full:https://registry.npmjs.org/next cache-miss
+18 http fetch GET 200 https://registry.npmjs.org/next 319ms (cache revalidated)
+19 silly packumentCache full:https://registry.npmjs.org/next set size:31066019 disposed:false
+20 silly fetch manifest @opentelemetry/api@^1.1.0
+21 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi cache-miss
+22 http cache https://registry.npmjs.org/@opentelemetry%2fapi 29ms (cache hit)
+23 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi set size:272967 disposed:false
+24 silly fetch manifest @playwright/test@^1.51.1
+25 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest cache-miss
+26 http cache https://registry.npmjs.org/@playwright%2ftest 28ms (cache hit)
+27 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest set size:9407786 disposed:false
+28 silly fetch manifest babel-plugin-react-compiler@*
+29 silly packumentCache full:https://registry.npmjs.org/babel-plugin-react-compiler cache-miss
+30 http cache https://registry.npmjs.org/babel-plugin-react-compiler 12ms (cache hit)
+31 silly packumentCache full:https://registry.npmjs.org/babel-plugin-react-compiler set size:1356999 disposed:false
+32 silly fetch manifest react@19.2.8
+33 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+34 http fetch GET 200 https://registry.npmjs.org/react 77ms (cache revalidated)
+35 silly packumentCache full:https://registry.npmjs.org/react set size:6873639 disposed:false
+36 silly fetch manifest react-dom@19.2.8
+37 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/react-dom 86ms (cache revalidated)
+39 silly packumentCache full:https://registry.npmjs.org/react-dom set size:9229396 disposed:false
+40 silly fetch manifest sass@^1.3.0
+41 silly packumentCache full:https://registry.npmjs.org/sass cache-miss
+42 http cache https://registry.npmjs.org/sass 13ms (cache hit)
+43 silly packumentCache full:https://registry.npmjs.org/sass set size:743214 disposed:false
+44 silly placeDep ROOT next@16.3.0 REPLACE for: english-speaking-partner@1.0.0 want: 16.3.0
+45 silly reify mark retired [
+45 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\typescript'
+45 silly reify ]
+46 silly reify mark retired [
+46 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\lucide-react'
+46 silly reify ]
+47 silly reify mark retired [
+47 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next'
+47 silly reify ]
+48 silly reify moves {
+48 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\typescript': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.typescript-MCmxLsRE',
+48 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\lucide-react': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.lucide-react-R7SqfmDY',
+48 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.next-bw4RsJBk'
+48 silly reify }
+49 silly audit bulk request {
+49 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+49 silly audit   '@emnapi/runtime': [ '1.11.3' ],
+49 silly audit   '@img/colour': [ '1.1.0' ],
+49 silly audit   '@img/sharp-darwin-arm64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-darwin-x64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-freebsd-wasm32': [ '0.35.3' ],
+49 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-linux-arm': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-linux-x64': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.3.2' ],
+49 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.3.2' ],
+49 silly audit   '@img/sharp-linux-arm': [ '0.35.3' ],
+49 silly audit   '@img/sharp-linux-arm64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-linux-ppc64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-linux-riscv64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-linux-s390x': [ '0.35.3' ],
+49 silly audit   '@img/sharp-linux-x64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-linuxmusl-x64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-wasm32': [ '0.35.3' ],
+49 silly audit   '@img/sharp-webcontainers-wasm32': [ '0.35.3' ],
+49 silly audit   '@img/sharp-win32-arm64': [ '0.35.3' ],
+49 silly audit   '@img/sharp-win32-ia32': [ '0.35.3' ],
+49 silly audit   '@img/sharp-win32-x64': [ '0.35.3' ],
+49 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+49 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+49 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+49 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+49 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+49 silly audit   '@next/env': [ '16.3.0' ],
+49 silly audit   '@next/swc-darwin-arm64': [ '16.3.0' ],
+49 silly audit   '@next/swc-darwin-x64': [ '16.3.0' ],
+49 silly audit   '@next/swc-linux-arm64-gnu': [ '16.3.0' ],
+49 silly audit   '@next/swc-linux-arm64-musl': [ '16.3.0' ],
+49 silly audit   '@next/swc-linux-x64-gnu': [ '16.3.0' ],
+49 silly audit   '@next/swc-linux-x64-musl': [ '16.3.0' ],
+49 silly audit   '@next/swc-win32-arm64-msvc': [ '16.3.0' ],
+49 silly audit   '@next/swc-win32-x64-msvc': [ '16.3.0' ],
+49 silly audit   '@swc/helpers': [ '0.5.15' ],
+49 silly audit   '@tailwindcss/node': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.3.3' ],
+49 silly audit   '@tailwindcss/postcss': [ '4.3.3' ],
+49 silly audit   '@types/node': [ '26.2.0' ],
+49 silly audit   '@types/react': [ '19.2.18' ],
+49 silly audit   '@types/react-dom': [ '19.2.4' ],
+49 silly audit   '@typescript/typescript-aix-ppc64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-darwin-arm64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-darwin-x64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-freebsd-arm64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-freebsd-x64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-linux-arm': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-linux-arm64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-linux-loong64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-linux-mips64el': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-linux-ppc64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-linux-riscv64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-linux-s390x': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-linux-x64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-netbsd-arm64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-netbsd-x64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-openbsd-arm64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-openbsd-x64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-sunos-x64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-win32-arm64': [ '7.0.2' ],
+49 silly audit   '@typescript/typescript-win32-x64': [ '7.0.2' ],
+49 silly audit   'baseline-browser-mapping': [ '2.11.13' ],
+49 silly audit   'caniuse-lite': [ '1.0.30001809' ],
+49 silly audit   'client-only': [ '0.0.1' ],
+49 silly audit   csstype: [ '3.2.3' ],
+49 silly audit   'detect-libc': [ '2.1.2' ],
+49 silly audit   'enhanced-resolve': [ '5.24.5' ],
+49 silly audit   'graceful-fs': [ '4.2.11' ],
+49 silly audit   jiti: [ '2.7.0' ],
+49 silly audit   lightningcss: [ '1.32.0' ],
+49 silly audit   'lightningcss-android-arm64': [ '1.32.0' ],
+49 silly audit   'lightningcss-darwin-arm64': [ '1.32.0' ],
+49 silly audit   'lightningcss-darwin-x64': [ '1.32.0' ],
+49 silly audit   'lightningcss-freebsd-x64': [ '1.32.0' ],
+49 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.32.0' ],
+49 silly audit   'lightningcss-linux-arm64-gnu': [ '1.32.0' ],
+49 silly audit   'lightningcss-linux-arm64-musl': [ '1.32.0' ],
+49 silly audit   'lightningcss-linux-x64-gnu': [ '1.32.0' ],
+49 silly audit   'lightningcss-linux-x64-musl': [ '1.32.0' ],
+49 silly audit   'lightningcss-win32-arm64-msvc': [ '1.32.0' ],
+49 silly audit   'lightningcss-win32-x64-msvc': [ '1.32.0' ],
+49 silly audit   'lucide-react': [ '1.30.0' ],
+49 silly audit   'magic-string': [ '0.30.21' ],
+49 silly audit   nanoid: [ '3.3.18' ],
+49 silly audit   postcss: [ '8.5.26', '8.5.23' ],
+49 silly audit   picocolors: [ '1.1.1' ],
+49 silly audit   react: [ '19.2.8' ],
+49 silly audit   'react-dom': [ '19.2.8' ],
+49 silly audit   scheduler: [ '0.27.0' ],
+49 silly audit   semver: [ '7.8.5' ],
+49 silly audit   sharp: [ '0.35.3' ],
+49 silly audit   'source-map-js': [ '1.2.1' ],
+49 silly audit   'styled-jsx': [ '5.1.6' ],
+49 silly audit   tailwindcss: [ '4.3.3' ],
+49 silly audit   tapable: [ '2.3.3' ],
+49 silly audit   tslib: [ '2.8.1' ],
+49 silly audit   typescript: [ '7.0.2' ],
+49 silly audit   'undici-types': [ '8.3.0' ],
+49 silly audit   next: [ '16.3.0' ]
+49 silly audit }
+50 http cache undici-types@https://registry.npmjs.org/undici-types/-/undici-types-8.3.0.tgz 0ms (cache hit)
+51 http cache tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 1ms (cache hit)
+52 http cache styled-jsx@https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz 0ms (cache hit)
+53 http cache tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.3.tgz 0ms (cache hit)
+54 http cache tapable@https://registry.npmjs.org/tapable/-/tapable-2.3.3.tgz 0ms (cache hit)
+55 http cache sharp@https://registry.npmjs.org/sharp/-/sharp-0.35.3.tgz 0ms (cache hit)
+56 http cache source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 0ms (cache hit)
+57 http cache semver@https://registry.npmjs.org/semver/-/semver-7.8.5.tgz 0ms (cache hit)
+58 http cache react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.2.8.tgz 0ms (cache hit)
+59 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.26.tgz 0ms (cache hit)
+60 http cache scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz 0ms (cache hit)
+61 http cache nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz 0ms (cache hit)
+62 http cache magic-string@https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz 0ms (cache hit)
+63 http cache lightningcss-win32-x64-msvc@https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.32.0.tgz 0ms (cache hit)
+64 http cache react@https://registry.npmjs.org/react/-/react-19.2.8.tgz 0ms (cache hit)
+65 http cache graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 0ms (cache hit)
+66 http cache lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.32.0.tgz 0ms (cache hit)
+67 http cache picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 0ms (cache hit)
+68 http cache detect-libc@https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz 0ms (cache hit)
+69 http cache enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.24.5.tgz 0ms (cache hit)
+70 http cache caniuse-lite@https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001809.tgz 0ms (cache hit)
+71 http cache jiti@https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz 0ms (cache hit)
+72 http cache @types/react-dom@https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.4.tgz 0ms (cache hit)
+73 http cache csstype@https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz 0ms (cache hit)
+74 http cache baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.13.tgz 0ms (cache hit)
+75 http cache @types/node@https://registry.npmjs.org/@types/node/-/node-26.2.0.tgz 0ms (cache hit)
+76 http cache client-only@https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz 0ms (cache hit)
+77 http cache @typescript/typescript-win32-x64@https://registry.npmjs.org/@typescript/typescript-win32-x64/-/typescript-win32-x64-7.0.2.tgz 0ms (cache hit)
+78 http cache @tailwindcss/oxide-win32-x64-msvc@https://registry.npmjs.org/@tailwindcss/oxide-win32-x64-msvc/-/oxide-win32-x64-msvc-4.3.3.tgz 0ms (cache hit)
+79 http cache @types/react@https://registry.npmjs.org/@types/react/-/react-19.2.18.tgz 0ms (cache hit)
+80 http cache @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.3.3.tgz 0ms (cache hit)
+81 http cache @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz 0ms (cache hit)
+82 http cache @tailwindcss/postcss@https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.3.3.tgz 0ms (cache hit)
+83 http cache @next/swc-win32-x64-msvc@https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-16.3.0.tgz 0ms (cache hit)
+84 http cache @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.3.3.tgz 0ms (cache hit)
+85 http cache @jridgewell/sourcemap-codec@https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz 0ms (cache hit)
+86 http cache @jridgewell/trace-mapping@https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz 0ms (cache hit)
+87 http cache @next/env@https://registry.npmjs.org/@next/env/-/env-16.3.0.tgz 0ms (cache hit)
+88 http cache @jridgewell/remapping@https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz 0ms (cache hit)
+89 http cache @alloc/quick-lru@https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz 0ms (cache hit)
+90 http cache @jridgewell/resolve-uri@https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 0ms (cache hit)
+91 http cache @img/colour@https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz 0ms (cache hit)
+92 http cache @jridgewell/gen-mapping@https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz 0ms (cache hit)
+93 http cache @img/sharp-win32-x64@https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.35.3.tgz 0ms (cache hit)
+94 http cache lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-1.30.0.tgz 0ms (cache hit)
+95 http cache typescript@https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz 0ms (cache hit)
+96 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.23.tgz 0ms (cache hit)
+97 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz. Extracting by manifest.
+98 silly tarball no local data for source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz. Extracting by manifest.
+99 silly tarball no local data for nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz. Extracting by manifest.
+100 silly tarball no local data for graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz. Extracting by manifest.
+101 silly tarball no local data for picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz. Extracting by manifest.
+102 silly tarball no local data for caniuse-lite@https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001809.tgz. Extracting by manifest.
+103 silly tarball no local data for csstype@https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz. Extracting by manifest.
+104 silly tarball no local data for baseline-browser-mapping@https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.13.tgz. Extracting by manifest.
+105 silly tarball no local data for client-only@https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz. Extracting by manifest.
+106 silly tarball no local data for @jridgewell/sourcemap-codec@https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz. Extracting by manifest.
+107 silly tarball no local data for @jridgewell/trace-mapping@https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz. Extracting by manifest.
+108 silly tarball no local data for @alloc/quick-lru@https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz. Extracting by manifest.
+109 silly tarball no local data for @jridgewell/resolve-uri@https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz. Extracting by manifest.
+110 silly tarball no local data for @jridgewell/gen-mapping@https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz. Extracting by manifest.
+111 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1354ms
+112 silly audit report {}
+113 http fetch GET 200 https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz 1913ms (cache miss)
+114 http fetch GET 200 https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz 1928ms (cache miss)
+115 http fetch GET 200 https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 1951ms (cache miss)
+116 http fetch GET 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 2021ms (cache miss)
+117 http fetch GET 200 https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz 2106ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 2533ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.13.tgz 2694ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/nanoid/-/nanoid-3.3.18.tgz 2976ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 3010ms (cache miss)
+122 http fetch GET 200 https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz 3037ms (cache miss)
+123 http fetch GET 200 https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz 3270ms (cache miss)
+124 http fetch GET 200 https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz 3404ms (cache miss)
+125 http fetch GET 200 https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz 3985ms (cache miss)
+126 http fetch GET 200 https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001809.tgz 11683ms (cache miss)
+127 warn cleanup Failed to remove some directories [
+127 warn cleanup   [
+127 warn cleanup     '\\\\?\\C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next',
+127 warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\next-devtools\dev-overlay\components\errors\dev-tools-indicator'] {
+127 warn cleanup       errno: -4048,
+127 warn cleanup       code: 'EPERM',
+127 warn cleanup       syscall: 'rmdir',
+127 warn cleanup       path: 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next\\dist\\next-devtools\\dev-overlay\\components\\errors\\dev-tools-indicator'
+127 warn cleanup     }
+127 warn cleanup   ],
+127 warn cleanup   [
+127 warn cleanup     'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next',
+127 warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\server\route-modules'] {
+127 warn cleanup       errno: -4048,
+127 warn cleanup       code: 'EPERM',
+127 warn cleanup       syscall: 'rmdir',
+127 warn cleanup       path: 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next\\dist\\server\\route-modules'
+127 warn cleanup     }
+127 warn cleanup   ]
+127 warn cleanup ]
+128 verbose stack Error: ENOTEMPTY: directory not empty, rmdir 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\docs\01-app\03-api-reference\04-functions'
+129 error code ENOTEMPTY
+130 error syscall rmdir
+131 error path C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\docs\01-app\03-api-reference\04-functions
+132 error errno -4051
+133 error ENOTEMPTY: directory not empty, rmdir 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\docs\01-app\03-api-reference\04-functions'
+134 silly unfinished npm timer reify 1786274423585
+135 silly unfinished npm timer reify:unpack 1786274424854
+136 silly unfinished npm timer reifyNode:node_modules/next 1786274424855
+137 verbose cwd C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner
+138 verbose os Windows_NT 10.0.26200
+139 verbose node v24.19.0
+140 verbose npm  v11.17.0
+141 verbose exit -4051
+142 verbose code -4051
+143 error A complete log of this run can be found in: C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_20_23_045Z-debug-0.log

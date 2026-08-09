@@ -1,0 +1,28 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.17.0
+2 info using node@v24.19.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npmrc
+5 silly config load:file:C:\Users\momon\.npmrc
+6 silly config load:file:C:\Users\momon\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm ls next react react-dom lucide-react
+8 verbose argv "ls" "next" "react" "react-dom" "lucide-react" "--depth" "0" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_19_49_185Z-
+10 verbose logfile C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_19_49_185Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly logfile done cleaning log files
+14 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+15 verbose stack Error: invalid: next@ C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next
+15 verbose stack     at LS.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\ls.js:204:9)
+15 verbose stack     at async Npm.exec (C:\Program Files\nodejs\node_modules\npm\lib\npm.js:193:9)
+15 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli\entry.js:67:5)
+16 error code ELSPROBLEMS
+17 error invalid: next@ C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next
+18 verbose cwd C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner
+19 verbose os Windows_NT 10.0.26200
+20 verbose node v24.19.0
+21 verbose npm  v11.17.0
+22 verbose exit 1
+23 verbose code 1
+24 error A complete log of this run can be found in: C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_19_49_185Z-debug-0.log

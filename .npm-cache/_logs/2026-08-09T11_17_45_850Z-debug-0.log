@@ -1,0 +1,1531 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.17.0
+2 info using node@v24.19.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npmrc
+5 silly config load:file:C:\Users\momon\.npmrc
+6 silly config load:file:C:\Users\momon\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_17_45_850Z-
+10 verbose logfile C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\.npm-cache\_logs\2026-08-09T11_17_45_850Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+14 silly idealTree buildDeps
+15 silly fetch manifest @tailwindcss/postcss@4.3.3
+16 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fpostcss cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2fpostcss 436ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fpostcss set size:undefined disposed:false
+19 silly fetch manifest @types/node@26.2.0
+20 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+21 http cache https://registry.npmjs.org/@types%2fnode 53ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:11088606 disposed:false
+23 silly fetch manifest @types/react@19.2.18
+24 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+25 http cache https://registry.npmjs.org/@types%2freact 17ms (cache hit)
+26 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2637439 disposed:false
+27 silly fetch manifest @types/react-dom@19.2.4
+28 silly packumentCache full:https://registry.npmjs.org/@types%2freact-dom cache-miss
+29 http cache https://registry.npmjs.org/@types%2freact-dom 24ms (cache hit)
+30 silly packumentCache full:https://registry.npmjs.org/@types%2freact-dom set size:432855 disposed:false
+31 silly fetch manifest lucide-react@1.30.0
+32 silly packumentCache full:https://registry.npmjs.org/lucide-react cache-miss
+33 http cache https://registry.npmjs.org/lucide-react 14ms (cache hit)
+34 silly packumentCache full:https://registry.npmjs.org/lucide-react set size:2309362 disposed:false
+35 silly fetch manifest react@19.2.8
+36 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+37 http cache https://registry.npmjs.org/react 26ms (cache hit)
+38 silly packumentCache full:https://registry.npmjs.org/react set size:6873639 disposed:false
+39 silly fetch manifest next@16.3.0
+40 silly packumentCache full:https://registry.npmjs.org/next cache-miss
+41 http cache https://registry.npmjs.org/next 87ms (cache hit)
+42 silly packumentCache full:https://registry.npmjs.org/next set size:31066019 disposed:false
+43 silly fetch manifest @opentelemetry/api@^1.1.0
+44 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi cache-miss
+45 http fetch GET 200 https://registry.npmjs.org/@opentelemetry%2fapi 101ms (cache miss)
+46 silly packumentCache full:https://registry.npmjs.org/@opentelemetry%2fapi set size:undefined disposed:false
+47 silly fetch manifest @playwright/test@^1.51.1
+48 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest cache-miss
+49 http fetch GET 200 https://registry.npmjs.org/@playwright%2ftest 324ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/@playwright%2ftest set size:undefined disposed:false
+51 silly fetch manifest babel-plugin-react-compiler@*
+52 silly packumentCache full:https://registry.npmjs.org/babel-plugin-react-compiler cache-miss
+53 http fetch GET 200 https://registry.npmjs.org/babel-plugin-react-compiler 113ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/babel-plugin-react-compiler set size:undefined disposed:false
+55 silly fetch manifest react-dom@19.2.8
+56 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+57 http cache https://registry.npmjs.org/react-dom 31ms (cache hit)
+58 silly packumentCache full:https://registry.npmjs.org/react-dom set size:9229396 disposed:false
+59 silly fetch manifest sass@^1.3.0
+60 silly packumentCache full:https://registry.npmjs.org/sass cache-miss
+61 http fetch GET 200 https://registry.npmjs.org/sass 114ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/sass set size:undefined disposed:false
+63 silly fetch manifest postcss@8.5.26
+64 silly packumentCache full:https://registry.npmjs.org/postcss cache-miss
+65 http cache https://registry.npmjs.org/postcss 10ms (cache hit)
+66 silly packumentCache full:https://registry.npmjs.org/postcss set size:760024 disposed:false
+67 silly fetch manifest tailwindcss@4.3.3
+68 silly packumentCache full:https://registry.npmjs.org/tailwindcss cache-miss
+69 http cache https://registry.npmjs.org/tailwindcss 51ms (cache hit)
+70 silly packumentCache full:https://registry.npmjs.org/tailwindcss set size:10830846 disposed:false
+71 silly fetch manifest typescript@7.0.2
+72 silly packumentCache full:https://registry.npmjs.org/typescript cache-miss
+73 http cache https://registry.npmjs.org/typescript 90ms (cache hit)
+74 silly packumentCache full:https://registry.npmjs.org/typescript set size:15534884 disposed:false
+75 silly placeDep ROOT @tailwindcss/postcss@4.3.3 OK for: english-speaking-partner@1.0.0 want: 4.3.3
+76 silly placeDep ROOT @types/node@26.2.0 REPLACE for: english-speaking-partner@1.0.0 want: 26.2.0
+77 silly placeDep ROOT @types/react@19.2.18 REPLACE for: english-speaking-partner@1.0.0 want: 19.2.18
+78 silly placeDep ROOT @types/react-dom@19.2.4 REPLACE for: english-speaking-partner@1.0.0 want: 19.2.4
+79 silly placeDep ROOT lucide-react@1.30.0 REPLACE for: english-speaking-partner@1.0.0 want: 1.30.0
+80 silly placeDep ROOT next@16.3.0 REPLACE for: english-speaking-partner@1.0.0 want: 16.3.0
+81 silly placeDep ROOT postcss@8.5.26 REPLACE for: english-speaking-partner@1.0.0 want: 8.5.26
+82 silly placeDep ROOT react@19.2.8 REPLACE for: english-speaking-partner@1.0.0 want: 19.2.8
+83 warn ERESOLVE overriding peer dependency {
+83 warn ERESOLVE   code: 'ERESOLVE',
+83 warn ERESOLVE   edge: {
+83 warn ERESOLVE     type: 'peer',
+83 warn ERESOLVE     name: 'react',
+83 warn ERESOLVE     spec: '^18.3.1',
+83 warn ERESOLVE     from: {
+83 warn ERESOLVE       name: 'react-dom',
+83 warn ERESOLVE       version: '18.3.1',
+83 warn ERESOLVE       location: 'node_modules/react-dom',
+83 warn ERESOLVE       isWorkspace: false,
+83 warn ERESOLVE       dependents: [Array]
+83 warn ERESOLVE     }
+83 warn ERESOLVE   },
+83 warn ERESOLVE   dep: {
+83 warn ERESOLVE     name: 'react',
+83 warn ERESOLVE     version: '19.2.8',
+83 warn ERESOLVE     whileInstalling: {
+83 warn ERESOLVE       name: 'english-speaking-partner',
+83 warn ERESOLVE       version: '1.0.0',
+83 warn ERESOLVE       path: 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner'
+83 warn ERESOLVE     },
+83 warn ERESOLVE     location: 'node_modules/react',
+83 warn ERESOLVE     isWorkspace: false,
+83 warn ERESOLVE     dependents: [ [Object] ]
+83 warn ERESOLVE   },
+83 warn ERESOLVE   force: false,
+83 warn ERESOLVE   isMine: true,
+83 warn ERESOLVE   strictPeerDeps: false,
+83 warn ERESOLVE   current: {
+83 warn ERESOLVE     name: 'react',
+83 warn ERESOLVE     version: '18.3.1',
+83 warn ERESOLVE     location: 'node_modules/react',
+83 warn ERESOLVE     isWorkspace: false,
+83 warn ERESOLVE     dependents: [ [Object], [Object], [Object], [Object] ]
+83 warn ERESOLVE   }
+83 warn ERESOLVE }
+84 silly placeDep ROOT react-dom@19.2.8 REPLACE for: english-speaking-partner@1.0.0 want: 19.2.8
+85 silly placeDep ROOT tailwindcss@4.3.3 REPLACE for: english-speaking-partner@1.0.0 want: 4.3.3
+86 silly placeDep ROOT typescript@7.0.2 REPLACE for: english-speaking-partner@1.0.0 want: 7.0.2
+87 silly fetch manifest postcss@^8.5.16
+88 silly packumentCache full:https://registry.npmjs.org/postcss cache-hit
+89 silly fetch manifest @tailwindcss/node@4.3.3
+90 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fnode cache-miss
+91 silly fetch manifest @tailwindcss/oxide@4.3.3
+92 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide cache-miss
+93 silly fetch manifest undici-types@~8.3.0
+94 silly packumentCache full:https://registry.npmjs.org/undici-types cache-miss
+95 silly fetch manifest postcss@8.5.23
+96 silly packumentCache full:https://registry.npmjs.org/postcss cache-hit
+97 silly fetch manifest @next/env@16.3.0
+98 silly packumentCache full:https://registry.npmjs.org/@next%2fenv cache-miss
+99 silly fetch manifest styled-jsx@5.1.6
+100 silly packumentCache full:https://registry.npmjs.org/styled-jsx cache-miss
+101 silly fetch manifest @swc/helpers@0.5.15
+102 silly packumentCache full:https://registry.npmjs.org/@swc%2fhelpers cache-miss
+103 silly fetch manifest sharp@^0.35.3
+104 silly packumentCache full:https://registry.npmjs.org/sharp cache-miss
+105 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2fnode 206ms (cache miss)
+106 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2fnode set size:undefined disposed:false
+107 silly fetch manifest @next/swc-darwin-x64@16.3.0
+108 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-x64 cache-miss
+109 http fetch GET 200 https://registry.npmjs.org/undici-types 263ms (cache miss)
+110 silly packumentCache full:https://registry.npmjs.org/undici-types set size:undefined disposed:false
+111 silly fetch manifest @next/swc-darwin-arm64@16.3.0
+112 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-arm64 cache-miss
+113 http fetch GET 200 https://registry.npmjs.org/styled-jsx 392ms (cache miss)
+114 silly packumentCache full:https://registry.npmjs.org/styled-jsx set size:undefined disposed:false
+115 silly fetch manifest @next/swc-linux-x64-gnu@16.3.0
+116 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-gnu cache-miss
+117 http fetch GET 200 https://registry.npmjs.org/@swc%2fhelpers 434ms (cache miss)
+118 silly packumentCache full:https://registry.npmjs.org/@swc%2fhelpers set size:undefined disposed:false
+119 silly fetch manifest @next/swc-linux-x64-musl@16.3.0
+120 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-musl cache-miss
+121 http fetch GET 200 https://registry.npmjs.org/sharp 504ms (cache miss)
+122 silly packumentCache full:https://registry.npmjs.org/sharp set size:undefined disposed:false
+123 silly fetch manifest @next/swc-win32-x64-msvc@16.3.0
+124 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-x64-msvc cache-miss
+125 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-darwin-x64 621ms (cache miss)
+126 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-x64 set size:undefined disposed:false
+127 silly fetch manifest @next/swc-linux-arm64-gnu@16.3.0
+128 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu cache-miss
+129 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide 894ms (cache miss)
+130 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide set size:undefined disposed:false
+131 silly fetch manifest @next/swc-linux-arm64-musl@16.3.0
+132 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-musl cache-miss
+133 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-darwin-arm64 809ms (cache miss)
+134 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-darwin-arm64 set size:undefined disposed:false
+135 silly fetch manifest @next/swc-win32-arm64-msvc@16.3.0
+136 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc cache-miss
+137 http fetch GET 200 https://registry.npmjs.org/@next%2fenv 1132ms (cache miss)
+138 silly packumentCache full:https://registry.npmjs.org/@next%2fenv set size:undefined disposed:false
+139 silly fetch manifest scheduler@^0.27.0
+140 silly packumentCache full:https://registry.npmjs.org/scheduler cache-miss
+141 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-x64-gnu 857ms (cache miss)
+142 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-gnu set size:undefined disposed:false
+143 silly fetch manifest @typescript/typescript-aix-ppc64@7.0.2
+144 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-aix-ppc64 cache-miss
+145 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-x64-musl 904ms (cache miss)
+146 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-x64-musl set size:undefined disposed:false
+147 silly fetch manifest @typescript/typescript-linux-arm@7.0.2
+148 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-arm cache-miss
+149 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-aix-ppc64 176ms (cache miss)
+150 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-aix-ppc64 set size:undefined disposed:false
+151 silly fetch manifest @typescript/typescript-linux-x64@7.0.2
+152 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-x64 cache-miss
+153 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu 608ms (cache miss)
+154 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-gnu set size:undefined disposed:false
+155 silly fetch manifest @typescript/typescript-sunos-x64@7.0.2
+156 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-sunos-x64 cache-miss
+157 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-win32-x64-msvc 1182ms (cache miss)
+158 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-x64-msvc set size:undefined disposed:false
+159 silly fetch manifest @typescript/typescript-win32-x64@7.0.2
+160 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-win32-x64 cache-miss
+161 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-linux-arm64-musl 977ms (cache miss)
+162 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-linux-arm64-musl set size:undefined disposed:false
+163 silly fetch manifest @typescript/typescript-darwin-x64@7.0.2
+164 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-darwin-x64 cache-miss
+165 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-win32-x64 171ms (cache miss)
+166 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-win32-x64 set size:undefined disposed:false
+167 silly fetch manifest @typescript/typescript-netbsd-x64@7.0.2
+168 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-netbsd-x64 cache-miss
+169 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-sunos-x64 461ms (cache miss)
+170 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-sunos-x64 set size:undefined disposed:false
+171 silly fetch manifest @typescript/typescript-freebsd-x64@7.0.2
+172 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-freebsd-x64 cache-miss
+173 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-linux-arm 624ms (cache miss)
+174 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-arm set size:undefined disposed:false
+175 silly fetch manifest @typescript/typescript-linux-arm64@7.0.2
+176 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-arm64 cache-miss
+177 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-linux-x64 581ms (cache miss)
+178 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-x64 set size:undefined disposed:false
+179 silly fetch manifest @typescript/typescript-linux-ppc64@7.0.2
+180 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-ppc64 cache-miss
+181 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-freebsd-x64 89ms (cache miss)
+182 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-freebsd-x64 set size:undefined disposed:false
+183 silly fetch manifest @typescript/typescript-linux-s390x@7.0.2
+184 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-s390x cache-miss
+185 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-netbsd-x64 148ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-netbsd-x64 set size:undefined disposed:false
+187 silly fetch manifest @typescript/typescript-openbsd-x64@7.0.2
+188 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-openbsd-x64 cache-miss
+189 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-darwin-x64 169ms (cache miss)
+190 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-darwin-x64 set size:undefined disposed:false
+191 silly fetch manifest @typescript/typescript-win32-arm64@7.0.2
+192 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-win32-arm64 cache-miss
+193 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-linux-arm64 104ms (cache miss)
+194 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-arm64 set size:undefined disposed:false
+195 silly fetch manifest @typescript/typescript-darwin-arm64@7.0.2
+196 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-darwin-arm64 cache-miss
+197 http fetch GET 200 https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc 1008ms (cache miss)
+198 silly packumentCache full:https://registry.npmjs.org/@next%2fswc-win32-arm64-msvc set size:undefined disposed:false
+199 silly fetch manifest @typescript/typescript-netbsd-arm64@7.0.2
+200 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-netbsd-arm64 cache-miss
+201 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-linux-s390x 234ms (cache miss)
+202 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-s390x set size:undefined disposed:false
+203 silly fetch manifest @typescript/typescript-freebsd-arm64@7.0.2
+204 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-freebsd-arm64 cache-miss
+205 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-openbsd-x64 216ms (cache miss)
+206 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-openbsd-x64 set size:undefined disposed:false
+207 silly fetch manifest @typescript/typescript-linux-loong64@7.0.2
+208 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-loong64 cache-miss
+209 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-linux-ppc64 258ms (cache miss)
+210 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-ppc64 set size:undefined disposed:false
+211 silly fetch manifest @typescript/typescript-linux-riscv64@7.0.2
+212 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-riscv64 cache-miss
+213 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-win32-arm64 243ms (cache miss)
+214 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-win32-arm64 set size:undefined disposed:false
+215 silly fetch manifest @typescript/typescript-openbsd-arm64@7.0.2
+216 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-openbsd-arm64 cache-miss
+217 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-darwin-arm64 234ms (cache miss)
+218 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-darwin-arm64 set size:undefined disposed:false
+219 silly fetch manifest @typescript/typescript-linux-mips64el@7.0.2
+220 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-mips64el cache-miss
+221 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-netbsd-arm64 189ms (cache miss)
+222 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-netbsd-arm64 set size:undefined disposed:false
+223 http fetch GET 200 https://registry.npmjs.org/scheduler 1200ms (cache miss)
+224 silly packumentCache full:https://registry.npmjs.org/scheduler set size:undefined disposed:false
+225 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-linux-riscv64 119ms (cache miss)
+226 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-riscv64 set size:undefined disposed:false
+227 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-freebsd-arm64 132ms (cache miss)
+228 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-freebsd-arm64 set size:undefined disposed:false
+229 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-linux-loong64 129ms (cache miss)
+230 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-loong64 set size:undefined disposed:false
+231 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-openbsd-arm64 97ms (cache miss)
+232 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-openbsd-arm64 set size:undefined disposed:false
+233 http fetch GET 200 https://registry.npmjs.org/@typescript%2ftypescript-linux-mips64el 84ms (cache miss)
+234 silly packumentCache full:https://registry.npmjs.org/@typescript%2ftypescript-linux-mips64el set size:undefined disposed:false
+235 silly placeDep ROOT @tailwindcss/node@4.3.3 OK for: @tailwindcss/postcss@4.3.3 want: 4.3.3
+236 silly placeDep ROOT @tailwindcss/oxide@4.3.3 OK for: @tailwindcss/postcss@4.3.3 want: 4.3.3
+237 silly fetch manifest jiti@^2.7.0
+238 silly packumentCache full:https://registry.npmjs.org/jiti cache-miss
+239 silly fetch manifest lightningcss@1.32.0
+240 silly packumentCache full:https://registry.npmjs.org/lightningcss cache-miss
+241 silly fetch manifest magic-string@^0.30.21
+242 silly packumentCache full:https://registry.npmjs.org/magic-string cache-miss
+243 silly fetch manifest enhanced-resolve@^5.24.1
+244 silly packumentCache full:https://registry.npmjs.org/enhanced-resolve cache-miss
+245 silly fetch manifest @jridgewell/remapping@^2.3.5
+246 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fremapping cache-miss
+247 silly fetch manifest @tailwindcss/oxide-darwin-x64@4.3.3
+248 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-x64 cache-miss
+249 silly fetch manifest @tailwindcss/oxide-freebsd-x64@4.3.3
+250 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 cache-miss
+251 http fetch GET 200 https://registry.npmjs.org/jiti 121ms (cache miss)
+252 silly packumentCache full:https://registry.npmjs.org/jiti set size:undefined disposed:false
+253 silly fetch manifest @tailwindcss/oxide-wasm32-wasi@4.3.3
+254 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi cache-miss
+255 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fremapping 120ms (cache miss)
+256 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fremapping set size:undefined disposed:false
+257 silly fetch manifest @tailwindcss/oxide-darwin-arm64@4.3.3
+258 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 cache-miss
+259 http fetch GET 200 https://registry.npmjs.org/magic-string 137ms (cache miss)
+260 silly packumentCache full:https://registry.npmjs.org/magic-string set size:undefined disposed:false
+261 silly fetch manifest @tailwindcss/oxide-android-arm64@4.3.3
+262 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 cache-miss
+263 http fetch GET 200 https://registry.npmjs.org/lightningcss 158ms (cache miss)
+264 silly packumentCache full:https://registry.npmjs.org/lightningcss set size:undefined disposed:false
+265 silly fetch manifest @tailwindcss/oxide-linux-x64-gnu@4.3.3
+266 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu cache-miss
+267 http fetch GET 200 https://registry.npmjs.org/enhanced-resolve 154ms (cache miss)
+268 silly packumentCache full:https://registry.npmjs.org/enhanced-resolve set size:undefined disposed:false
+269 silly fetch manifest @tailwindcss/oxide-linux-x64-musl@4.3.3
+270 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl cache-miss
+271 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi 168ms (cache miss)
+272 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-wasm32-wasi set size:undefined disposed:false
+273 silly fetch manifest @tailwindcss/oxide-win32-x64-msvc@4.3.3
+274 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-x64-msvc cache-miss
+275 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 479ms (cache miss)
+276 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-android-arm64 set size:undefined disposed:false
+277 silly fetch manifest @tailwindcss/oxide-linux-arm64-gnu@4.3.3
+278 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-gnu cache-miss
+279 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 625ms (cache miss)
+280 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-freebsd-x64 set size:undefined disposed:false
+281 silly fetch manifest @tailwindcss/oxide-linux-arm64-musl@4.3.3
+282 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-musl cache-miss
+283 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 565ms (cache miss)
+284 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-arm64 set size:undefined disposed:false
+285 silly fetch manifest @tailwindcss/oxide-win32-arm64-msvc@4.3.3
+286 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-arm64-msvc cache-miss
+287 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl 568ms (cache miss)
+288 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-musl set size:undefined disposed:false
+289 silly fetch manifest @tailwindcss/oxide-linux-arm-gnueabihf@4.3.3
+290 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm-gnueabihf cache-miss
+291 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu 624ms (cache miss)
+292 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-x64-gnu set size:undefined disposed:false
+293 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-win32-x64-msvc 510ms (cache miss)
+294 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-x64-msvc set size:undefined disposed:false
+295 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-darwin-x64 894ms (cache miss)
+296 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-darwin-x64 set size:undefined disposed:false
+297 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-gnu 628ms (cache miss)
+298 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-gnu set size:undefined disposed:false
+299 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-win32-arm64-msvc 660ms (cache miss)
+300 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-win32-arm64-msvc set size:undefined disposed:false
+301 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-musl 733ms (cache miss)
+302 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm64-musl set size:undefined disposed:false
+303 http fetch GET 200 https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm-gnueabihf 659ms (cache miss)
+304 silly packumentCache full:https://registry.npmjs.org/@tailwindcss%2foxide-linux-arm-gnueabihf set size:undefined disposed:false
+305 silly placeDep ROOT @jridgewell/remapping@2.3.5 OK for: @tailwindcss/node@4.3.3 want: ^2.3.5
+306 silly placeDep ROOT enhanced-resolve@5.24.5 OK for: @tailwindcss/node@4.3.3 want: ^5.24.1
+307 silly placeDep ROOT jiti@2.7.0 OK for: @tailwindcss/node@4.3.3 want: ^2.7.0
+308 silly placeDep ROOT lightningcss@1.32.0 OK for: @tailwindcss/node@4.3.3 want: 1.32.0
+309 silly placeDep ROOT magic-string@0.30.21 OK for: @tailwindcss/node@4.3.3 want: ^0.30.21
+310 silly fetch manifest @jridgewell/gen-mapping@^0.3.5
+311 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fgen-mapping cache-miss
+312 silly fetch manifest @jridgewell/trace-mapping@^0.3.24
+313 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2ftrace-mapping cache-miss
+314 silly fetch manifest tapable@^2.3.3
+315 silly packumentCache full:https://registry.npmjs.org/tapable cache-miss
+316 silly fetch manifest graceful-fs@^4.2.4
+317 silly packumentCache full:https://registry.npmjs.org/graceful-fs cache-miss
+318 silly fetch manifest detect-libc@^2.0.3
+319 silly packumentCache full:https://registry.npmjs.org/detect-libc cache-miss
+320 silly fetch manifest lightningcss-darwin-x64@1.32.0
+321 silly packumentCache full:https://registry.npmjs.org/lightningcss-darwin-x64 cache-miss
+322 silly fetch manifest lightningcss-freebsd-x64@1.32.0
+323 silly packumentCache full:https://registry.npmjs.org/lightningcss-freebsd-x64 cache-miss
+324 http fetch GET 200 https://registry.npmjs.org/lightningcss-freebsd-x64 153ms (cache miss)
+325 silly packumentCache full:https://registry.npmjs.org/lightningcss-freebsd-x64 set size:undefined disposed:false
+326 silly fetch manifest lightningcss-darwin-arm64@1.32.0
+327 silly packumentCache full:https://registry.npmjs.org/lightningcss-darwin-arm64 cache-miss
+328 http fetch GET 200 https://registry.npmjs.org/lightningcss-darwin-x64 164ms (cache miss)
+329 silly packumentCache full:https://registry.npmjs.org/lightningcss-darwin-x64 set size:undefined disposed:false
+330 silly fetch manifest lightningcss-android-arm64@1.32.0
+331 silly packumentCache full:https://registry.npmjs.org/lightningcss-android-arm64 cache-miss
+332 http fetch GET 200 https://registry.npmjs.org/detect-libc 168ms (cache miss)
+333 silly packumentCache full:https://registry.npmjs.org/detect-libc set size:undefined disposed:false
+334 silly fetch manifest lightningcss-linux-x64-gnu@1.32.0
+335 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-x64-gnu cache-miss
+336 http fetch GET 200 https://registry.npmjs.org/graceful-fs 180ms (cache miss)
+337 silly packumentCache full:https://registry.npmjs.org/graceful-fs set size:undefined disposed:false
+338 silly fetch manifest lightningcss-linux-x64-musl@1.32.0
+339 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-x64-musl cache-miss
+340 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fgen-mapping 198ms (cache miss)
+341 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fgen-mapping set size:undefined disposed:false
+342 silly fetch manifest lightningcss-win32-x64-msvc@1.32.0
+343 silly packumentCache full:https://registry.npmjs.org/lightningcss-win32-x64-msvc cache-miss
+344 http fetch GET 200 https://registry.npmjs.org/tapable 200ms (cache miss)
+345 silly packumentCache full:https://registry.npmjs.org/tapable set size:undefined disposed:false
+346 silly fetch manifest lightningcss-linux-arm64-gnu@1.32.0
+347 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm64-gnu cache-miss
+348 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2ftrace-mapping 212ms (cache miss)
+349 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2ftrace-mapping set size:undefined disposed:false
+350 silly fetch manifest lightningcss-linux-arm64-musl@1.32.0
+351 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm64-musl cache-miss
+352 http fetch GET 200 https://registry.npmjs.org/lightningcss-darwin-arm64 91ms (cache miss)
+353 silly packumentCache full:https://registry.npmjs.org/lightningcss-darwin-arm64 set size:undefined disposed:false
+354 silly fetch manifest lightningcss-win32-arm64-msvc@1.32.0
+355 silly packumentCache full:https://registry.npmjs.org/lightningcss-win32-arm64-msvc cache-miss
+356 http fetch GET 200 https://registry.npmjs.org/lightningcss-android-arm64 87ms (cache miss)
+357 silly packumentCache full:https://registry.npmjs.org/lightningcss-android-arm64 set size:undefined disposed:false
+358 silly fetch manifest lightningcss-linux-arm-gnueabihf@1.32.0
+359 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf cache-miss
+360 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-x64-gnu 108ms (cache miss)
+361 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-x64-gnu set size:undefined disposed:false
+362 silly fetch manifest @jridgewell/sourcemap-codec@^1.5.5
+363 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsourcemap-codec cache-miss
+364 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-x64-musl 109ms (cache miss)
+365 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-x64-musl set size:undefined disposed:false
+366 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-arm64-gnu 114ms (cache miss)
+367 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm64-gnu set size:undefined disposed:false
+368 http fetch GET 200 https://registry.npmjs.org/lightningcss-win32-x64-msvc 126ms (cache miss)
+369 silly packumentCache full:https://registry.npmjs.org/lightningcss-win32-x64-msvc set size:undefined disposed:false
+370 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-arm64-musl 114ms (cache miss)
+371 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm64-musl set size:undefined disposed:false
+372 http fetch GET 200 https://registry.npmjs.org/lightningcss-win32-arm64-msvc 83ms (cache miss)
+373 silly packumentCache full:https://registry.npmjs.org/lightningcss-win32-arm64-msvc set size:undefined disposed:false
+374 http fetch GET 200 https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf 83ms (cache miss)
+375 silly packumentCache full:https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf set size:undefined disposed:false
+376 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fsourcemap-codec 88ms (cache miss)
+377 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsourcemap-codec set size:undefined disposed:false
+378 silly placeDep ROOT @jridgewell/gen-mapping@0.3.13 OK for: @jridgewell/remapping@2.3.5 want: ^0.3.5
+379 silly placeDep ROOT @jridgewell/trace-mapping@0.3.31 OK for: @jridgewell/remapping@2.3.5 want: ^0.3.24
+380 silly fetch manifest @jridgewell/sourcemap-codec@^1.5.0
+381 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsourcemap-codec cache-miss
+382 silly fetch manifest @jridgewell/resolve-uri@^3.1.0
+383 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fresolve-uri cache-miss
+384 silly fetch manifest @jridgewell/sourcemap-codec@^1.4.14
+385 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsourcemap-codec cache-miss
+386 http cache https://registry.npmjs.org/@jridgewell%2fsourcemap-codec 33ms (cache hit)
+387 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsourcemap-codec set size:51856 disposed:false
+388 http cache https://registry.npmjs.org/@jridgewell%2fsourcemap-codec 35ms (cache hit)
+389 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsourcemap-codec set size:51856 disposed:false
+390 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fsourcemap-codec dispose
+391 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fresolve-uri 82ms (cache miss)
+392 silly packumentCache full:https://registry.npmjs.org/@jridgewell%2fresolve-uri set size:undefined disposed:false
+393 silly placeDep ROOT @jridgewell/sourcemap-codec@1.5.5 OK for: @jridgewell/gen-mapping@0.3.13 want: ^1.5.0
+394 silly placeDep ROOT @jridgewell/resolve-uri@3.1.2 OK for: @jridgewell/trace-mapping@0.3.31 want: ^3.1.0
+395 silly placeDep ROOT @tailwindcss/oxide-android-arm64@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+396 silly placeDep ROOT @tailwindcss/oxide-darwin-arm64@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+397 silly placeDep ROOT @tailwindcss/oxide-darwin-x64@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+398 silly placeDep ROOT @tailwindcss/oxide-freebsd-x64@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+399 silly placeDep ROOT @tailwindcss/oxide-linux-arm-gnueabihf@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+400 silly placeDep ROOT @tailwindcss/oxide-linux-arm64-gnu@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+401 silly placeDep ROOT @tailwindcss/oxide-linux-arm64-musl@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+402 silly placeDep ROOT @tailwindcss/oxide-linux-x64-gnu@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+403 silly placeDep ROOT @tailwindcss/oxide-linux-x64-musl@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+404 silly placeDep ROOT @tailwindcss/oxide-wasm32-wasi@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+405 silly placeDep ROOT @tailwindcss/oxide-win32-arm64-msvc@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+406 silly placeDep ROOT @tailwindcss/oxide-win32-x64-msvc@4.3.3 OK for: @tailwindcss/oxide@4.3.3 want: 4.3.3
+407 silly placeDep ROOT undici-types@8.3.0 OK for: @types/node@26.2.0 want: ~8.3.0
+408 silly placeDep ROOT graceful-fs@4.2.11 OK for: enhanced-resolve@5.24.5 want: ^4.2.4
+409 silly placeDep ROOT tapable@2.3.3 OK for: enhanced-resolve@5.24.5 want: ^2.3.3
+410 silly placeDep ROOT detect-libc@2.1.2 OK for: lightningcss@1.32.0 want: ^2.0.3
+411 silly placeDep ROOT lightningcss-android-arm64@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+412 silly placeDep ROOT lightningcss-darwin-arm64@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+413 silly placeDep ROOT lightningcss-darwin-x64@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+414 silly placeDep ROOT lightningcss-freebsd-x64@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+415 silly placeDep ROOT lightningcss-linux-arm-gnueabihf@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+416 silly placeDep ROOT lightningcss-linux-arm64-gnu@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+417 silly placeDep ROOT lightningcss-linux-arm64-musl@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+418 silly placeDep ROOT lightningcss-linux-x64-gnu@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+419 silly placeDep ROOT lightningcss-linux-x64-musl@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+420 silly placeDep ROOT lightningcss-win32-arm64-msvc@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+421 silly placeDep ROOT lightningcss-win32-x64-msvc@1.32.0 OK for: lightningcss@1.32.0 want: 1.32.0
+422 silly fetch manifest react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+423 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+424 http cache https://registry.npmjs.org/react 24ms (cache hit)
+425 silly packumentCache full:https://registry.npmjs.org/react set size:6873639 disposed:false
+426 silly placeDep ROOT @next/env@16.3.0 OK for: next@16.3.0 want: 16.3.0
+427 silly placeDep ROOT @next/swc-darwin-arm64@16.3.0 OK for: next@16.3.0 want: 16.3.0
+428 silly placeDep ROOT @next/swc-darwin-x64@16.3.0 OK for: next@16.3.0 want: 16.3.0
+429 silly placeDep ROOT @next/swc-linux-arm64-gnu@16.3.0 OK for: next@16.3.0 want: 16.3.0
+430 silly placeDep ROOT @next/swc-linux-arm64-musl@16.3.0 OK for: next@16.3.0 want: 16.3.0
+431 silly placeDep ROOT @next/swc-linux-x64-gnu@16.3.0 OK for: next@16.3.0 want: 16.3.0
+432 silly placeDep ROOT @next/swc-linux-x64-musl@16.3.0 OK for: next@16.3.0 want: 16.3.0
+433 silly placeDep ROOT @next/swc-win32-arm64-msvc@16.3.0 OK for: next@16.3.0 want: 16.3.0
+434 silly placeDep ROOT @next/swc-win32-x64-msvc@16.3.0 OK for: next@16.3.0 want: 16.3.0
+435 silly placeDep ROOT @swc/helpers@0.5.15 OK for: next@16.3.0 want: 0.5.15
+436 silly placeDep node_modules/next postcss@8.5.23 OK for: next@16.3.0 want: 8.5.23
+437 silly placeDep ROOT sharp@0.35.3 OK for: next@16.3.0 want: ^0.35.3
+438 silly placeDep ROOT styled-jsx@5.1.6 OK for: next@16.3.0 want: 5.1.6
+439 silly fetch manifest tslib@^2.8.0
+440 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+441 silly fetch manifest @img/colour@^1.1.0
+442 silly packumentCache full:https://registry.npmjs.org/@img%2fcolour cache-miss
+443 silly fetch manifest semver@^7.8.5
+444 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+445 silly fetch manifest @img/sharp-darwin-arm64@0.35.3
+446 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-darwin-arm64 cache-miss
+447 silly fetch manifest @img/sharp-darwin-x64@0.35.3
+448 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-darwin-x64 cache-miss
+449 silly fetch manifest @img/sharp-freebsd-wasm32@0.35.3
+450 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-freebsd-wasm32 cache-miss
+451 silly fetch manifest @img/sharp-libvips-darwin-arm64@1.3.2
+452 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-darwin-arm64 cache-miss
+453 http fetch GET 200 https://registry.npmjs.org/@img%2fcolour 212ms (cache miss)
+454 silly packumentCache full:https://registry.npmjs.org/@img%2fcolour set size:undefined disposed:false
+455 silly fetch manifest @img/sharp-libvips-darwin-x64@1.3.2
+456 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-darwin-x64 cache-miss
+457 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-darwin-arm64 222ms (cache miss)
+458 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-darwin-arm64 set size:undefined disposed:false
+459 silly fetch manifest @img/sharp-libvips-linux-arm@1.3.2
+460 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm cache-miss
+461 http fetch GET 200 https://registry.npmjs.org/tslib 229ms (cache miss)
+462 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+463 silly fetch manifest @img/sharp-libvips-linux-arm64@1.3.2
+464 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm64 cache-miss
+465 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-freebsd-wasm32 232ms (cache miss)
+466 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-freebsd-wasm32 set size:undefined disposed:false
+467 silly fetch manifest @img/sharp-libvips-linux-ppc64@1.3.2
+468 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-ppc64 cache-miss
+469 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-darwin-x64 237ms (cache miss)
+470 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-darwin-x64 set size:undefined disposed:false
+471 silly fetch manifest @img/sharp-libvips-linux-riscv64@1.3.2
+472 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-riscv64 cache-miss
+473 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-darwin-arm64 239ms (cache miss)
+474 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-darwin-arm64 set size:undefined disposed:false
+475 silly fetch manifest @img/sharp-libvips-linux-s390x@1.3.2
+476 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-s390x cache-miss
+477 http fetch GET 200 https://registry.npmjs.org/semver 243ms (cache miss)
+478 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+479 silly fetch manifest @img/sharp-libvips-linux-x64@1.3.2
+480 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-x64 cache-miss
+481 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-darwin-x64 97ms (cache miss)
+482 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-darwin-x64 set size:undefined disposed:false
+483 silly fetch manifest @img/sharp-libvips-linuxmusl-arm64@1.3.2
+484 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-arm64 cache-miss
+485 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm64 94ms (cache miss)
+486 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm64 set size:undefined disposed:false
+487 silly fetch manifest @img/sharp-libvips-linuxmusl-x64@1.3.2
+488 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-x64 cache-miss
+489 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-s390x 91ms (cache miss)
+490 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-s390x set size:undefined disposed:false
+491 silly fetch manifest @img/sharp-linux-arm@0.35.3
+492 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm cache-miss
+493 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-riscv64 105ms (cache miss)
+494 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-riscv64 set size:undefined disposed:false
+495 silly fetch manifest @img/sharp-linux-arm64@0.35.3
+496 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm64 cache-miss
+497 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-x64 106ms (cache miss)
+498 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-x64 set size:undefined disposed:false
+499 silly fetch manifest @img/sharp-linux-ppc64@0.35.3
+500 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-ppc64 cache-miss
+501 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-x64 124ms (cache miss)
+502 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-x64 set size:undefined disposed:false
+503 silly fetch manifest @img/sharp-linux-riscv64@0.35.3
+504 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-riscv64 cache-miss
+505 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-arm64 140ms (cache miss)
+506 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linuxmusl-arm64 set size:undefined disposed:false
+507 silly fetch manifest @img/sharp-linux-s390x@0.35.3
+508 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-s390x cache-miss
+509 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-arm 127ms (cache miss)
+510 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm set size:undefined disposed:false
+511 silly fetch manifest @img/sharp-linux-x64@0.35.3
+512 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-x64 cache-miss
+513 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-arm64 126ms (cache miss)
+514 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-arm64 set size:undefined disposed:false
+515 silly fetch manifest @img/sharp-linuxmusl-arm64@0.35.3
+516 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linuxmusl-arm64 cache-miss
+517 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-ppc64 124ms (cache miss)
+518 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-ppc64 set size:undefined disposed:false
+519 silly fetch manifest @img/sharp-linuxmusl-x64@0.35.3
+520 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linuxmusl-x64 cache-miss
+521 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm 275ms (cache miss)
+522 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-arm set size:undefined disposed:false
+523 silly fetch manifest @img/sharp-webcontainers-wasm32@0.35.3
+524 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-webcontainers-wasm32 cache-miss
+525 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-libvips-linux-ppc64 271ms (cache miss)
+526 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-libvips-linux-ppc64 set size:undefined disposed:false
+527 silly fetch manifest @img/sharp-win32-arm64@0.35.3
+528 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-arm64 cache-miss
+529 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-riscv64 84ms (cache miss)
+530 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-riscv64 set size:undefined disposed:false
+531 silly fetch manifest @img/sharp-win32-ia32@0.35.3
+532 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-ia32 cache-miss
+533 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-s390x 94ms (cache miss)
+534 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-s390x set size:undefined disposed:false
+535 silly fetch manifest @img/sharp-win32-x64@0.35.3
+536 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-x64 cache-miss
+537 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linuxmusl-arm64 129ms (cache miss)
+538 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linuxmusl-arm64 set size:undefined disposed:false
+539 silly fetch manifest client-only@0.0.1
+540 silly packumentCache full:https://registry.npmjs.org/client-only cache-miss
+541 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linux-x64 144ms (cache miss)
+542 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linux-x64 set size:undefined disposed:false
+543 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-win32-arm64 131ms (cache miss)
+544 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-arm64 set size:undefined disposed:false
+545 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-webcontainers-wasm32 141ms (cache miss)
+546 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-webcontainers-wasm32 set size:undefined disposed:false
+547 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-linuxmusl-x64 165ms (cache miss)
+548 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-linuxmusl-x64 set size:undefined disposed:false
+549 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-win32-ia32 123ms (cache miss)
+550 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-ia32 set size:undefined disposed:false
+551 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-win32-x64 114ms (cache miss)
+552 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-win32-x64 set size:undefined disposed:false
+553 http fetch GET 200 https://registry.npmjs.org/client-only 76ms (cache miss)
+554 silly packumentCache full:https://registry.npmjs.org/client-only set size:undefined disposed:false
+555 silly placeDep ROOT tslib@2.8.1 OK for: @swc/helpers@0.5.15 want: ^2.8.0
+556 silly placeDep ROOT scheduler@0.27.0 OK for: react-dom@19.2.8 want: ^0.27.0
+557 silly placeDep ROOT @img/colour@1.1.0 OK for: sharp@0.35.3 want: ^1.1.0
+558 silly placeDep ROOT @img/sharp-darwin-arm64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+559 silly placeDep ROOT @img/sharp-darwin-x64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+560 silly placeDep ROOT @img/sharp-freebsd-wasm32@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+561 silly placeDep ROOT @img/sharp-libvips-darwin-arm64@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+562 silly placeDep ROOT @img/sharp-libvips-darwin-x64@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+563 silly placeDep ROOT @img/sharp-libvips-linux-arm@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+564 silly placeDep ROOT @img/sharp-libvips-linux-arm64@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+565 silly placeDep ROOT @img/sharp-libvips-linux-ppc64@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+566 silly placeDep ROOT @img/sharp-libvips-linux-riscv64@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+567 silly placeDep ROOT @img/sharp-libvips-linux-s390x@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+568 silly placeDep ROOT @img/sharp-libvips-linux-x64@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+569 silly placeDep ROOT @img/sharp-libvips-linuxmusl-arm64@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+570 silly placeDep ROOT @img/sharp-libvips-linuxmusl-x64@1.3.2 OK for: sharp@0.35.3 want: 1.3.2
+571 silly placeDep ROOT @img/sharp-linux-arm@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+572 silly placeDep ROOT @img/sharp-linux-arm64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+573 silly placeDep ROOT @img/sharp-linux-ppc64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+574 silly placeDep ROOT @img/sharp-linux-riscv64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+575 silly placeDep ROOT @img/sharp-linux-s390x@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+576 silly placeDep ROOT @img/sharp-linux-x64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+577 silly placeDep ROOT @img/sharp-linuxmusl-arm64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+578 silly placeDep ROOT @img/sharp-linuxmusl-x64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+579 silly placeDep ROOT @img/sharp-webcontainers-wasm32@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+580 silly placeDep ROOT @img/sharp-win32-arm64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+581 silly placeDep ROOT @img/sharp-win32-ia32@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+582 silly placeDep ROOT @img/sharp-win32-x64@0.35.3 OK for: sharp@0.35.3 want: 0.35.3
+583 silly placeDep ROOT semver@7.8.5 OK for: sharp@0.35.3 want: ^7.8.5
+584 silly fetch manifest @img/sharp-wasm32@0.35.3
+585 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-wasm32 cache-miss
+586 silly fetch manifest @img/sharp-wasm32@0.35.3
+587 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-wasm32 cache-miss
+588 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-wasm32 120ms (cache miss)
+589 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-wasm32 set size:undefined disposed:false
+590 http fetch GET 200 https://registry.npmjs.org/@img%2fsharp-wasm32 125ms (cache miss)
+591 silly packumentCache full:https://registry.npmjs.org/@img%2fsharp-wasm32 set size:undefined disposed:false
+592 silly placeDep ROOT @img/sharp-wasm32@0.35.3 OK for: @img/sharp-freebsd-wasm32@0.35.3 want: 0.35.3
+593 silly fetch manifest @emnapi/runtime@^1.11.1
+594 silly packumentCache full:https://registry.npmjs.org/@emnapi%2fruntime cache-miss
+595 http fetch GET 200 https://registry.npmjs.org/@emnapi%2fruntime 104ms (cache miss)
+596 silly packumentCache full:https://registry.npmjs.org/@emnapi%2fruntime set size:undefined disposed:false
+597 silly placeDep ROOT @emnapi/runtime@1.11.3 OK for: @img/sharp-wasm32@0.35.3 want: ^1.11.1
+598 silly placeDep ROOT client-only@0.0.1 OK for: styled-jsx@5.1.6 want: 0.0.1
+599 silly placeDep ROOT @typescript/typescript-aix-ppc64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+600 silly placeDep ROOT @typescript/typescript-darwin-arm64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+601 silly placeDep ROOT @typescript/typescript-darwin-x64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+602 silly placeDep ROOT @typescript/typescript-freebsd-arm64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+603 silly placeDep ROOT @typescript/typescript-freebsd-x64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+604 silly placeDep ROOT @typescript/typescript-linux-arm@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+605 silly placeDep ROOT @typescript/typescript-linux-arm64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+606 silly placeDep ROOT @typescript/typescript-linux-loong64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+607 silly placeDep ROOT @typescript/typescript-linux-mips64el@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+608 silly placeDep ROOT @typescript/typescript-linux-ppc64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+609 silly placeDep ROOT @typescript/typescript-linux-riscv64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+610 silly placeDep ROOT @typescript/typescript-linux-s390x@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+611 silly placeDep ROOT @typescript/typescript-linux-x64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+612 silly placeDep ROOT @typescript/typescript-netbsd-arm64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+613 silly placeDep ROOT @typescript/typescript-netbsd-x64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+614 silly placeDep ROOT @typescript/typescript-openbsd-arm64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+615 silly placeDep ROOT @typescript/typescript-openbsd-x64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+616 silly placeDep ROOT @typescript/typescript-sunos-x64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+617 silly placeDep ROOT @typescript/typescript-win32-arm64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+618 silly placeDep ROOT @typescript/typescript-win32-x64@7.0.2 OK for: typescript@7.0.2 want: 7.0.2
+619 silly reify mark retired [
+619 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@next\\env'
+619 silly reify ]
+620 silly reify mark retired [
+620 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@next\\swc-win32-x64-msvc'
+620 silly reify ]
+621 silly reify mark retired [
+621 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\fs.scandir'
+621 silly reify ]
+622 silly reify mark retired [
+622 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\fs.stat'
+622 silly reify ]
+623 silly reify mark retired [
+623 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\fs.walk'
+623 silly reify ]
+624 silly reify mark retired [
+624 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@swc\\counter'
+624 silly reify ]
+625 silly reify mark retired [
+625 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@swc\\helpers'
+625 silly reify ]
+626 silly reify mark retired [
+626 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\node'
+626 silly reify ]
+627 silly reify mark retired [
+627 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\prop-types'
+627 silly reify ]
+628 silly reify mark retired [
+628 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\react'
+628 silly reify ]
+629 silly reify mark retired [
+629 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\react-dom'
+629 silly reify ]
+630 silly reify mark retired [
+630 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\any-promise'
+630 silly reify ]
+631 silly reify mark retired [
+631 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\anymatch'
+631 silly reify ]
+632 silly reify mark retired [
+632 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\arg'
+632 silly reify ]
+633 silly reify mark retired [
+633 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\autoprefixer',
+633 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\autoprefixer',
+633 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\autoprefixer.cmd',
+633 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\autoprefixer.ps1'
+633 silly reify ]
+634 silly reify mark retired [
+634 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\binary-extensions'
+634 silly reify ]
+635 silly reify mark retired [
+635 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\braces'
+635 silly reify ]
+636 silly reify mark retired [
+636 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\browserslist',
+636 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\browserslist',
+636 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\browserslist.cmd',
+636 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\browserslist.ps1'
+636 silly reify ]
+637 silly reify mark retired [
+637 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\busboy'
+637 silly reify ]
+638 silly reify mark retired [
+638 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\camelcase-css'
+638 silly reify ]
+639 silly reify mark retired [
+639 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\chokidar'
+639 silly reify ]
+640 silly reify mark retired [
+640 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\commander'
+640 silly reify ]
+641 silly reify mark retired [
+641 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\cssesc',
+641 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\cssesc',
+641 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\cssesc.cmd',
+641 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\cssesc.ps1'
+641 silly reify ]
+642 silly reify mark retired [
+642 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\didyoumean'
+642 silly reify ]
+643 silly reify mark retired [
+643 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\dlv'
+643 silly reify ]
+644 silly reify mark retired [
+644 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\electron-to-chromium'
+644 silly reify ]
+645 silly reify mark retired [
+645 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\es-errors'
+645 silly reify ]
+646 silly reify mark retired [
+646 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\escalade'
+646 silly reify ]
+647 silly reify mark retired [
+647 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\fast-glob'
+647 silly reify ]
+648 silly reify mark retired [
+648 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\fastq'
+648 silly reify ]
+649 silly reify mark retired [
+649 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\fill-range'
+649 silly reify ]
+650 silly reify mark retired [
+650 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\fraction.js'
+650 silly reify ]
+651 silly reify mark retired [
+651 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\function-bind'
+651 silly reify ]
+652 silly reify mark retired [
+652 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\glob-parent'
+652 silly reify ]
+653 silly reify mark retired [
+653 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\hasown'
+653 silly reify ]
+654 silly reify mark retired [
+654 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-binary-path'
+654 silly reify ]
+655 silly reify mark retired [
+655 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-core-module'
+655 silly reify ]
+656 silly reify mark retired [
+656 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-extglob'
+656 silly reify ]
+657 silly reify mark retired [
+657 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-glob'
+657 silly reify ]
+658 silly reify mark retired [
+658 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-number'
+658 silly reify ]
+659 silly reify mark retired [
+659 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\jiti',
+659 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\jiti',
+659 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\jiti.cmd',
+659 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\jiti.ps1'
+659 silly reify ]
+660 silly reify mark retired [
+660 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\js-tokens'
+660 silly reify ]
+661 silly reify mark retired [
+661 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\lilconfig'
+661 silly reify ]
+662 silly reify mark retired [
+662 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\lines-and-columns'
+662 silly reify ]
+663 silly reify mark retired [
+663 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\loose-envify',
+663 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\loose-envify',
+663 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\loose-envify.cmd',
+663 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\loose-envify.ps1'
+663 silly reify ]
+664 silly reify mark retired [
+664 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\lucide-react'
+664 silly reify ]
+665 silly reify mark retired [
+665 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\merge2'
+665 silly reify ]
+666 silly reify mark retired [
+666 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\micromatch'
+666 silly reify ]
+667 silly reify mark retired [
+667 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\mz'
+667 silly reify ]
+668 silly reify mark retired [
+668 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next',
+668 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\next',
+668 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\next.cmd',
+668 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\next.ps1'
+668 silly reify ]
+669 silly reify mark retired [
+669 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\node-releases'
+669 silly reify ]
+670 silly reify mark retired [
+670 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\normalize-path'
+670 silly reify ]
+671 silly reify mark retired [
+671 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\normalize-range'
+671 silly reify ]
+672 silly reify mark retired [
+672 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\object-assign'
+672 silly reify ]
+673 silly reify mark retired [
+673 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\object-hash'
+673 silly reify ]
+674 silly reify mark retired [
+674 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\path-parse'
+674 silly reify ]
+675 silly reify mark retired [
+675 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\picomatch'
+675 silly reify ]
+676 silly reify mark retired [
+676 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\pify'
+676 silly reify ]
+677 silly reify mark retired [
+677 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\pirates'
+677 silly reify ]
+678 silly reify mark retired [
+678 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss'
+678 silly reify ]
+679 silly reify mark retired [
+679 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-import'
+679 silly reify ]
+680 silly reify mark retired [
+680 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-js'
+680 silly reify ]
+681 silly reify mark retired [
+681 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-nested'
+681 silly reify ]
+682 silly reify mark retired [
+682 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-selector-parser'
+682 silly reify ]
+683 silly reify mark retired [
+683 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-value-parser'
+683 silly reify ]
+684 silly reify mark retired [
+684 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\queue-microtask'
+684 silly reify ]
+685 silly reify mark retired [
+685 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\react'
+685 silly reify ]
+686 silly reify mark retired [
+686 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\react-dom'
+686 silly reify ]
+687 silly reify mark retired [
+687 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\read-cache'
+687 silly reify ]
+688 silly reify mark retired [
+688 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\readdirp'
+688 silly reify ]
+689 silly reify mark retired [
+689 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\resolve',
+689 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\resolve',
+689 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\resolve.cmd',
+689 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\resolve.ps1'
+689 silly reify ]
+690 silly reify mark retired [
+690 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\reusify'
+690 silly reify ]
+691 silly reify mark retired [
+691 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\run-parallel'
+691 silly reify ]
+692 silly reify mark retired [
+692 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\scheduler'
+692 silly reify ]
+693 silly reify mark retired [
+693 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\streamsearch'
+693 silly reify ]
+694 silly reify mark retired [
+694 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\styled-jsx'
+694 silly reify ]
+695 silly reify mark retired [
+695 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\sucrase',
+695 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase',
+695 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase.cmd',
+695 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase.ps1',
+695 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase-node',
+695 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase-node.cmd',
+695 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase-node.ps1'
+695 silly reify ]
+696 silly reify mark retired [
+696 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\supports-preserve-symlinks-flag'
+696 silly reify ]
+697 silly reify mark retired [
+697 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\tailwindcss',
+697 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwind',
+697 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwind.cmd',
+697 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwind.ps1',
+697 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwindcss',
+697 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwindcss.cmd',
+697 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwindcss.ps1'
+697 silly reify ]
+698 silly reify mark retired [
+698 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\thenify'
+698 silly reify ]
+699 silly reify mark retired [
+699 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\thenify-all'
+699 silly reify ]
+700 silly reify mark retired [
+700 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\tinyglobby'
+700 silly reify ]
+701 silly reify mark retired [
+701 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\to-regex-range'
+701 silly reify ]
+702 silly reify mark retired [
+702 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\ts-interface-checker'
+702 silly reify ]
+703 silly reify mark retired [
+703 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\typescript',
+703 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsc',
+703 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsc.cmd',
+703 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsc.ps1',
+703 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsserver',
+703 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsserver.cmd',
+703 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsserver.ps1'
+703 silly reify ]
+704 silly reify mark retired [
+704 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\undici-types'
+704 silly reify ]
+705 silly reify mark retired [
+705 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\update-browserslist-db',
+705 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\update-browserslist-db',
+705 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\update-browserslist-db.cmd',
+705 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\update-browserslist-db.ps1'
+705 silly reify ]
+706 silly reify mark retired [
+706 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\util-deprecate'
+706 silly reify ]
+707 silly reify mark retired [
+707 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\yaml',
+707 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\yaml',
+707 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\yaml.cmd',
+707 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\yaml.ps1'
+707 silly reify ]
+708 silly reify moves {
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@next\\env': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@next\\.env-RwlESq57',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@next\\swc-win32-x64-msvc': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@next\\.swc-win32-x64-msvc-BL3NXoN7',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\fs.scandir': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\.fs.scandir-KtvWVtlU',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\fs.stat': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\.fs.stat-xXJzi9yE',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\fs.walk': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@nodelib\\.fs.walk-nLFLKY4J',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@swc\\counter': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@swc\\.counter-JD1786NX',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@swc\\helpers': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@swc\\.helpers-0vsGDq9d',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\node': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\.node-xXzQzGGV',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\prop-types': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\.prop-types-jL3hdq4u',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\react': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\.react-F3jpb6ux',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\react-dom': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\@types\\.react-dom-iYIBPyDU',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\any-promise': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.any-promise-pJ4Hs5Qu',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\anymatch': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.anymatch-dMEnvzPG',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\arg': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.arg-Rf7yEYOK',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\autoprefixer': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.autoprefixer-gtb1DZ4k',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\autoprefixer': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.autoprefixer-DuvxqGdk',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\autoprefixer.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.autoprefixer.cmd-H26Bdtfg',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\autoprefixer.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.autoprefixer.ps1-MvMyytUV',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\binary-extensions': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.binary-extensions-55Ts7DfP',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\braces': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.braces-qojq5pnh',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\browserslist': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.browserslist-eXknogX3',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\browserslist': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.browserslist-xBq5bvZ6',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\browserslist.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.browserslist.cmd-MxGTUBrS',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\browserslist.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.browserslist.ps1-dwy1t2wZ',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\busboy': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.busboy-Zep4g2Uj',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\camelcase-css': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.camelcase-css-05wsoxGy',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\chokidar': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.chokidar-53kVcadJ',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\commander': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.commander-QGdeuylR',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\cssesc': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.cssesc-MOx2X9hi',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\cssesc': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.cssesc-eFULqKK7',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\cssesc.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.cssesc.cmd-mZb7nbqu',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\cssesc.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.cssesc.ps1-s47i3DYB',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\didyoumean': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.didyoumean-zldyVNA2',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\dlv': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.dlv-hvXHYaeW',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\electron-to-chromium': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.electron-to-chromium-yLj4aIM7',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\es-errors': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.es-errors-dyV44bK3',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\escalade': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.escalade-YzpG4MUY',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\fast-glob': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.fast-glob-Ev52Rd0z',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\fastq': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.fastq-vfpsdq6N',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\fill-range': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.fill-range-dOkxRonz',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\fraction.js': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.fraction.js-rwyj0OKw',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\function-bind': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.function-bind-uXQAtLYo',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\glob-parent': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.glob-parent-gSdMNPJq',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\hasown': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.hasown-m3Q1j9fN',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-binary-path': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.is-binary-path-IM0WoKYo',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-core-module': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.is-core-module-GRsuTcDi',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-extglob': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.is-extglob-9CboR5ky',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-glob': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.is-glob-0BPAEKzx',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\is-number': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.is-number-wknRxgLT',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\jiti': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.jiti-kv1swAoX',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\jiti': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.jiti-occbS5M5',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\jiti.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.jiti.cmd-iQnBlcwr',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\jiti.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.jiti.ps1-ObxYzZKB',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\js-tokens': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.js-tokens-3yFrC6bk',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\lilconfig': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.lilconfig-0LCzf8Ly',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\lines-and-columns': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.lines-and-columns-zByBbDFS',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\loose-envify': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.loose-envify-IvtnM6uT',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\loose-envify': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.loose-envify-eW5DnoKY',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\loose-envify.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.loose-envify.cmd-OVXQa43T',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\loose-envify.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.loose-envify.ps1-T7P4sVFc',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\lucide-react': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.lucide-react-R7SqfmDY',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\merge2': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.merge2-HhfkAJA8',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\micromatch': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.micromatch-b0rA36Oe',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\mz': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.mz-vANors2n',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.next-bw4RsJBk',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\next': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.next-Lvakfos8',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\next.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.next.cmd-Xelha4bZ',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\next.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.next.ps1-cGzVbTcM',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\node-releases': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.node-releases-M17NuyO4',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\normalize-path': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.normalize-path-g51xaI8y',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\normalize-range': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.normalize-range-5MCjQ0Ty',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\object-assign': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.object-assign-bFnYlRDf',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\object-hash': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.object-hash-iLWojQy2',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\path-parse': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.path-parse-lAmAH5Fp',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\picomatch': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.picomatch-Mf2eh8nX',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\pify': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.pify-LbkzGKhm',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\pirates': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.pirates-nvpDd8cu',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.postcss-xvqP99tp',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-import': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.postcss-import-yJAXggaV',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-js': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.postcss-js-9w8xKnJ3',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-nested': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.postcss-nested-K09y2YcQ',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-selector-parser': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.postcss-selector-parser-2XAXK10K',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\postcss-value-parser': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.postcss-value-parser-bVSyHmPX',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\queue-microtask': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.queue-microtask-bA62ixVr',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\react': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.react-6T0NBP9w',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\react-dom': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.react-dom-KvNagZHP',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\read-cache': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.read-cache-jdrXEssn',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\readdirp': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.readdirp-aeDppIEp',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\resolve': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.resolve-fFx2XC34',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\resolve': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.resolve-DvtyafXL',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\resolve.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.resolve.cmd-E3LWIrwm',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\resolve.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.resolve.ps1-jeVhCK4y',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\reusify': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.reusify-Li0cso2f',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\run-parallel': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.run-parallel-QfpejIGt',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\scheduler': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.scheduler-X1NsXzFY',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\streamsearch': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.streamsearch-heHCq03K',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\styled-jsx': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.styled-jsx-ygkFm8ce',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\sucrase': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.sucrase-bsA6FBgr',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.sucrase-q18P5JJz',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.sucrase.cmd-705gxrDN',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.sucrase.ps1-PouC4W51',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase-node': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.sucrase-node-MRUmNami',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase-node.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.sucrase-node.cmd-ewBZVOzR',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\sucrase-node.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.sucrase-node.ps1-ZQLvjR8m',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\supports-preserve-symlinks-flag': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.supports-preserve-symlinks-flag-LYvtNHC2',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\tailwindcss': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.tailwindcss-x2L8Zt5i',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwind': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tailwind-q5ts8RBm',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwind.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tailwind.cmd-Y7jOUYb3',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwind.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tailwind.ps1-xHSjVrO9',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwindcss': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tailwindcss-T160SRRY',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwindcss.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tailwindcss.cmd-nP2ckDuc',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tailwindcss.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tailwindcss.ps1-x8D0yQV3',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\thenify': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.thenify-EPBdc73g',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\thenify-all': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.thenify-all-yd7pXAGi',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\tinyglobby': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.tinyglobby-7ZOTiq7u',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\to-regex-range': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.to-regex-range-Cq83NfCF',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\ts-interface-checker': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.ts-interface-checker-62snMRKT',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\typescript': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.typescript-MCmxLsRE',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsc': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tsc-Up6WwhMx',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsc.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tsc.cmd-H1hEwo1C',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsc.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tsc.ps1-TbgR5xHM',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsserver': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tsserver-jNtltmKo',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsserver.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tsserver.cmd-PRhBAYlI',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\tsserver.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.tsserver.ps1-RQbOmBbl',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\undici-types': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.undici-types-UDUkpb1K',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\update-browserslist-db': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.update-browserslist-db-1DaWbOnQ',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\update-browserslist-db': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.update-browserslist-db-2nvlEmr6',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\update-browserslist-db.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.update-browserslist-db.cmd-mtXou7lf',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\update-browserslist-db.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.update-browserslist-db.ps1-q53FrKFM',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\util-deprecate': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.util-deprecate-LMPSzFuP',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\yaml': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.yaml-RZZA0Ifa',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\yaml': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.yaml-9Ria2ZjX',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\yaml.cmd': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.yaml.cmd-I1WEgkPz',
+708 silly reify   'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\yaml.ps1': 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\.bin\\.yaml.ps1-TYGlis5Z'
+708 silly reify }
+709 silly audit bulk request {
+709 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+709 silly audit   'baseline-browser-mapping': [ '2.11.13' ],
+709 silly audit   'caniuse-lite': [ '1.0.30001809' ],
+709 silly audit   csstype: [ '3.2.3' ],
+709 silly audit   nanoid: [ '3.3.18' ],
+709 silly audit   picocolors: [ '1.1.1' ],
+709 silly audit   'source-map-js': [ '1.2.1' ],
+709 silly audit   '@tailwindcss/postcss': [ '4.3.3' ],
+709 silly audit   '@types/node': [ '26.2.0' ],
+709 silly audit   '@types/react': [ '19.2.18' ],
+709 silly audit   '@types/react-dom': [ '19.2.4' ],
+709 silly audit   'lucide-react': [ '1.30.0' ],
+709 silly audit   next: [ '16.3.0' ],
+709 silly audit   postcss: [ '8.5.26', '8.5.23' ],
+709 silly audit   react: [ '19.2.8' ],
+709 silly audit   'react-dom': [ '19.2.8' ],
+709 silly audit   tailwindcss: [ '4.3.3' ],
+709 silly audit   typescript: [ '7.0.2' ],
+709 silly audit   '@tailwindcss/node': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide': [ '4.3.3' ],
+709 silly audit   '@jridgewell/remapping': [ '2.3.5' ],
+709 silly audit   'enhanced-resolve': [ '5.24.5' ],
+709 silly audit   jiti: [ '2.7.0' ],
+709 silly audit   lightningcss: [ '1.32.0' ],
+709 silly audit   'magic-string': [ '0.30.21' ],
+709 silly audit   '@jridgewell/gen-mapping': [ '0.3.13' ],
+709 silly audit   '@jridgewell/trace-mapping': [ '0.3.31' ],
+709 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+709 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+709 silly audit   '@tailwindcss/oxide-android-arm64': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-darwin-arm64': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-darwin-x64': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-freebsd-x64': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-linux-arm-gnueabihf': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-linux-arm64-gnu': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-linux-arm64-musl': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-linux-x64-gnu': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-linux-x64-musl': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-wasm32-wasi': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-win32-arm64-msvc': [ '4.3.3' ],
+709 silly audit   '@tailwindcss/oxide-win32-x64-msvc': [ '4.3.3' ],
+709 silly audit   'undici-types': [ '8.3.0' ],
+709 silly audit   'graceful-fs': [ '4.2.11' ],
+709 silly audit   tapable: [ '2.3.3' ],
+709 silly audit   'detect-libc': [ '2.1.2' ],
+709 silly audit   'lightningcss-android-arm64': [ '1.32.0' ],
+709 silly audit   'lightningcss-darwin-arm64': [ '1.32.0' ],
+709 silly audit   'lightningcss-darwin-x64': [ '1.32.0' ],
+709 silly audit   'lightningcss-freebsd-x64': [ '1.32.0' ],
+709 silly audit   'lightningcss-linux-arm-gnueabihf': [ '1.32.0' ],
+709 silly audit   'lightningcss-linux-arm64-gnu': [ '1.32.0' ],
+709 silly audit   'lightningcss-linux-arm64-musl': [ '1.32.0' ],
+709 silly audit   'lightningcss-linux-x64-gnu': [ '1.32.0' ],
+709 silly audit   'lightningcss-linux-x64-musl': [ '1.32.0' ],
+709 silly audit   'lightningcss-win32-arm64-msvc': [ '1.32.0' ],
+709 silly audit   'lightningcss-win32-x64-msvc': [ '1.32.0' ],
+709 silly audit   '@next/env': [ '16.3.0' ],
+709 silly audit   '@next/swc-darwin-arm64': [ '16.3.0' ],
+709 silly audit   '@next/swc-darwin-x64': [ '16.3.0' ],
+709 silly audit   '@next/swc-linux-arm64-gnu': [ '16.3.0' ],
+709 silly audit   '@next/swc-linux-arm64-musl': [ '16.3.0' ],
+709 silly audit   '@next/swc-linux-x64-gnu': [ '16.3.0' ],
+709 silly audit   '@next/swc-linux-x64-musl': [ '16.3.0' ],
+709 silly audit   '@next/swc-win32-arm64-msvc': [ '16.3.0' ],
+709 silly audit   '@next/swc-win32-x64-msvc': [ '16.3.0' ],
+709 silly audit   '@swc/helpers': [ '0.5.15' ],
+709 silly audit   sharp: [ '0.35.3' ],
+709 silly audit   'styled-jsx': [ '5.1.6' ],
+709 silly audit   tslib: [ '2.8.1' ],
+709 silly audit   scheduler: [ '0.27.0' ],
+709 silly audit   '@img/colour': [ '1.1.0' ],
+709 silly audit   '@img/sharp-darwin-arm64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-darwin-x64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-freebsd-wasm32': [ '0.35.3' ],
+709 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-linux-arm': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-linux-x64': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.3.2' ],
+709 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.3.2' ],
+709 silly audit   '@img/sharp-linux-arm': [ '0.35.3' ],
+709 silly audit   '@img/sharp-linux-arm64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-linux-ppc64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-linux-riscv64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-linux-s390x': [ '0.35.3' ],
+709 silly audit   '@img/sharp-linux-x64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-linuxmusl-x64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-webcontainers-wasm32': [ '0.35.3' ],
+709 silly audit   '@img/sharp-win32-arm64': [ '0.35.3' ],
+709 silly audit   '@img/sharp-win32-ia32': [ '0.35.3' ],
+709 silly audit   '@img/sharp-win32-x64': [ '0.35.3' ],
+709 silly audit   semver: [ '7.8.5' ],
+709 silly audit   '@img/sharp-wasm32': [ '0.35.3' ],
+709 silly audit   '@emnapi/runtime': [ '1.11.3' ],
+709 silly audit   'client-only': [ '0.0.1' ],
+709 silly audit   '@typescript/typescript-aix-ppc64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-darwin-arm64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-darwin-x64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-freebsd-arm64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-freebsd-x64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-linux-arm': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-linux-arm64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-linux-loong64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-linux-mips64el': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-linux-ppc64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-linux-riscv64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-linux-s390x': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-linux-x64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-netbsd-arm64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-netbsd-x64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-openbsd-arm64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-openbsd-x64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-sunos-x64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-win32-arm64': [ '7.0.2' ],
+709 silly audit   '@typescript/typescript-win32-x64': [ '7.0.2' ]
+709 silly audit }
+710 http cache tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.3.tgz 0ms (cache hit)
+711 http cache semver@https://registry.npmjs.org/semver/-/semver-7.8.5.tgz 0ms (cache hit)
+712 http cache @img/sharp-win32-x64@https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.35.3.tgz 0ms (cache hit)
+713 http cache sharp@https://registry.npmjs.org/sharp/-/sharp-0.35.3.tgz 0ms (cache hit)
+714 http cache @img/colour@https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz 0ms (cache hit)
+715 http cache lightningcss-win32-x64-msvc@https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.32.0.tgz 0ms (cache hit)
+716 http cache detect-libc@https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz 0ms (cache hit)
+717 http cache @tailwindcss/oxide-win32-x64-msvc@https://registry.npmjs.org/@tailwindcss/oxide-win32-x64-msvc/-/oxide-win32-x64-msvc-4.3.3.tgz 0ms (cache hit)
+718 http cache magic-string@https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz 0ms (cache hit)
+719 http cache tapable@https://registry.npmjs.org/tapable/-/tapable-2.3.3.tgz 0ms (cache hit)
+720 http cache @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.3.3.tgz 0ms (cache hit)
+721 http cache lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.32.0.tgz 0ms (cache hit)
+722 http cache @jridgewell/remapping@https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz 0ms (cache hit)
+723 http cache enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.24.5.tgz 0ms (cache hit)
+724 http cache @tailwindcss/postcss@https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.3.3.tgz 0ms (cache hit)
+725 http cache undici-types@https://registry.npmjs.org/undici-types/-/undici-types-8.3.0.tgz 0ms (cache hit)
+726 http cache typescript@https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz 0ms (cache hit)
+727 http cache @typescript/typescript-win32-x64@https://registry.npmjs.org/@typescript/typescript-win32-x64/-/typescript-win32-x64-7.0.2.tgz 0ms (cache hit)
+728 silly tarball no local data for tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.3.tgz. Extracting by manifest.
+729 http cache styled-jsx@https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz 0ms (cache hit)
+730 http cache react@https://registry.npmjs.org/react/-/react-19.2.8.tgz 0ms (cache hit)
+731 http cache scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz 0ms (cache hit)
+732 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.26.tgz 0ms (cache hit)
+733 http cache lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-1.30.0.tgz 0ms (cache hit)
+734 http cache next@https://registry.npmjs.org/next/-/next-16.3.0.tgz 0ms (cache hit)
+735 http cache jiti@https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz 0ms (cache hit)
+736 http cache @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.3.3.tgz 0ms (cache hit)
+737 http cache @types/react-dom@https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.4.tgz 0ms (cache hit)
+738 http cache @types/react@https://registry.npmjs.org/@types/react/-/react-19.2.18.tgz 0ms (cache hit)
+739 http cache @types/node@https://registry.npmjs.org/@types/node/-/node-26.2.0.tgz 0ms (cache hit)
+740 http cache @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz 0ms (cache hit)
+741 http cache @next/swc-win32-x64-msvc@https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-16.3.0.tgz 0ms (cache hit)
+742 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.8.5.tgz. Extracting by manifest.
+743 silly tarball no local data for @img/sharp-win32-x64@https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.35.3.tgz. Extracting by manifest.
+744 silly tarball no local data for sharp@https://registry.npmjs.org/sharp/-/sharp-0.35.3.tgz. Extracting by manifest.
+745 silly tarball no local data for @img/colour@https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz. Extracting by manifest.
+746 silly tarball no local data for lightningcss-win32-x64-msvc@https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.32.0.tgz. Extracting by manifest.
+747 silly tarball no local data for detect-libc@https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz. Extracting by manifest.
+748 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.23.tgz 0ms (cache hit)
+749 http cache @next/env@https://registry.npmjs.org/@next/env/-/env-16.3.0.tgz 0ms (cache hit)
+750 silly tarball no local data for @tailwindcss/oxide-win32-x64-msvc@https://registry.npmjs.org/@tailwindcss/oxide-win32-x64-msvc/-/oxide-win32-x64-msvc-4.3.3.tgz. Extracting by manifest.
+751 silly tarball no local data for magic-string@https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz. Extracting by manifest.
+752 silly tarball no local data for tapable@https://registry.npmjs.org/tapable/-/tapable-2.3.3.tgz. Extracting by manifest.
+753 silly tarball no local data for @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.3.3.tgz. Extracting by manifest.
+754 silly tarball no local data for lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.32.0.tgz. Extracting by manifest.
+755 silly tarball no local data for @jridgewell/remapping@https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz. Extracting by manifest.
+756 silly tarball no local data for enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.24.5.tgz. Extracting by manifest.
+757 silly tarball no local data for @tailwindcss/postcss@https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.3.3.tgz. Extracting by manifest.
+758 silly tarball no local data for undici-types@https://registry.npmjs.org/undici-types/-/undici-types-8.3.0.tgz. Extracting by manifest.
+759 silly tarball no local data for typescript@https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz. Extracting by manifest.
+760 silly tarball no local data for @typescript/typescript-win32-x64@https://registry.npmjs.org/@typescript/typescript-win32-x64/-/typescript-win32-x64-7.0.2.tgz. Extracting by manifest.
+761 http cache react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.2.8.tgz 1ms (cache hit)
+762 silly tarball no local data for styled-jsx@https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz. Extracting by manifest.
+763 silly tarball no local data for react@https://registry.npmjs.org/react/-/react-19.2.8.tgz. Extracting by manifest.
+764 silly tarball no local data for scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz. Extracting by manifest.
+765 silly tarball no local data for postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.26.tgz. Extracting by manifest.
+766 silly tarball no local data for lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-1.30.0.tgz. Extracting by manifest.
+767 silly tarball no local data for next@https://registry.npmjs.org/next/-/next-16.3.0.tgz. Extracting by manifest.
+768 silly tarball no local data for jiti@https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz. Extracting by manifest.
+769 silly tarball no local data for @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.3.3.tgz. Extracting by manifest.
+770 silly tarball no local data for @types/react-dom@https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.4.tgz. Extracting by manifest.
+771 silly tarball no local data for @types/react@https://registry.npmjs.org/@types/react/-/react-19.2.18.tgz. Extracting by manifest.
+772 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-26.2.0.tgz. Extracting by manifest.
+773 silly tarball no local data for @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz. Extracting by manifest.
+774 silly tarball no local data for @next/swc-win32-x64-msvc@https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-16.3.0.tgz. Extracting by manifest.
+775 silly tarball no local data for postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.23.tgz. Extracting by manifest.
+776 silly tarball no local data for @next/env@https://registry.npmjs.org/@next/env/-/env-16.3.0.tgz. Extracting by manifest.
+777 silly tarball no local data for react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.2.8.tgz. Extracting by manifest.
+778 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 324ms
+779 silly audit report {}
+780 http fetch GET 200 https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz 390ms (cache miss)
+781 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.3.3.tgz 485ms (cache miss)
+782 http fetch GET 200 https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz 481ms (cache miss)
+783 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.3.3.tgz 691ms (cache miss)
+784 http fetch GET 200 https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz 821ms (cache miss)
+785 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/node/-/node-4.3.3.tgz 1168ms (cache miss)
+786 http fetch GET 200 https://registry.npmjs.org/@types/react-dom/-/react-dom-19.2.4.tgz 1233ms (cache miss)
+787 http fetch GET 200 https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz 1377ms (cache miss)
+788 http fetch GET 200 https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz 1453ms (cache miss)
+789 http fetch GET 200 https://registry.npmjs.org/react/-/react-19.2.8.tgz 1462ms (cache miss)
+790 http fetch GET 200 https://registry.npmjs.org/tapable/-/tapable-2.3.3.tgz 1493ms (cache miss)
+791 http fetch GET 200 https://registry.npmjs.org/lightningcss/-/lightningcss-1.32.0.tgz 1492ms (cache miss)
+792 http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-8.3.0.tgz 1657ms (cache miss)
+793 http fetch GET 200 https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz 1746ms (cache miss)
+794 http fetch GET 200 https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.3.tgz 1810ms (cache miss)
+795 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.8.5.tgz 1997ms (cache miss)
+796 http fetch GET 200 https://registry.npmjs.org/sharp/-/sharp-0.35.3.tgz 2118ms (cache miss)
+797 http fetch GET 200 https://registry.npmjs.org/postcss/-/postcss-8.5.26.tgz 2135ms (cache miss)
+798 http fetch GET 200 https://registry.npmjs.org/@types/react/-/react-19.2.18.tgz 2200ms (cache miss)
+799 http fetch GET 200 https://registry.npmjs.org/postcss/-/postcss-8.5.23.tgz 2187ms (cache miss)
+800 http fetch GET 200 https://registry.npmjs.org/@next/env/-/env-16.3.0.tgz 2294ms (cache miss)
+801 http fetch GET 200 https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.24.5.tgz 2400ms (cache miss)
+802 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-26.2.0.tgz 2762ms (cache miss)
+803 http fetch GET 200 https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz 2996ms (cache miss)
+804 http fetch GET 200 https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.32.0.tgz 4172ms (cache miss)
+805 http fetch GET 200 https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz 4351ms (cache miss)
+806 http fetch GET 200 https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz 4830ms (cache miss)
+807 http fetch GET 200 https://registry.npmjs.org/react-dom/-/react-dom-19.2.8.tgz 5835ms (cache miss)
+808 http fetch GET 200 https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.35.3.tgz 6758ms (cache miss)
+809 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/oxide-win32-x64-msvc/-/oxide-win32-x64-msvc-4.3.3.tgz 7578ms (cache miss)
+810 http fetch GET 200 https://registry.npmjs.org/@typescript/typescript-win32-x64/-/typescript-win32-x64-7.0.2.tgz 14237ms (cache miss)
+811 http fetch GET 200 https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-16.3.0.tgz 26204ms (cache miss)
+812 http fetch GET 200 https://registry.npmjs.org/lucide-react/-/lucide-react-1.30.0.tgz 27391ms (cache miss)
+813 warn tar TAR_ENTRY_ERROR ENOENT: no such file or directory, open 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\esm\server\route-modules\app-route\helpers\auto-implement-methods.js.map'
+814 silly tar TAR_ENTRY_ERROR ENOENT: no such file or directory, open 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\esm\server\route-modules\app-route\helpers\auto-implement-methods.js.map' [Error: ENOENT: no such file or directory, open 'C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner\node_modules\next\dist\esm\server\route-modules\app-route\helpers\auto-implement-methods.js.map'] {
+814 silly tar   errno: -4058,
+814 silly tar   code: 'ENOENT',
+814 silly tar   syscall: 'open',
+814 silly tar   path: 'C:\\Users\\momon\\Documents\\Codex\\2026-08-09\\bu\\outputs\\english-speaking-partner\\node_modules\\next\\dist\\esm\\server\\route-modules\\app-route\\helpers\\auto-implement-methods.js.map',
+814 silly tar   entry: Is {
+814 silly tar     _events: [Object: null prototype] {},
+814 silly tar     _eventsCount: 0,
+814 silly tar     _maxListeners: undefined,
+814 silly tar     writable: false,
+814 silly tar     readable: false,
+814 silly tar     extended: undefined,
+814 silly tar     globalExtended: undefined,
+814 silly tar     header: Ls {
+814 silly tar       cksumValid: true,
+814 silly tar       needPax: false,
+814 silly tar       nullBlock: false,
+814 silly tar       block: undefined,
+814 silly tar       path: 'package/dist/esm/server/route-modules/app-route/helpers/auto-implement-methods.js.map',
+814 silly tar       mode: 420,
+814 silly tar       uid: 0,
+814 silly tar       gid: 0,
+814 silly tar       size: 4741,
+814 silly tar       cksum: 12137,
+814 silly tar       linkpath: '',
+814 silly tar       uname: '',
+814 silly tar       gname: '',
+814 silly tar       devmaj: 0,
+814 silly tar       devmin: 0,
+814 silly tar       atime: undefined,
+814 silly tar       ctime: undefined,
+814 silly tar       mtime: 1985-10-26T08:15:00.000Z,
+814 silly tar       charset: undefined,
+814 silly tar       comment: undefined
+814 silly tar     },
+814 silly tar     startBlockSize: 5120,
+814 silly tar     blockRemain: 0,
+814 silly tar     remain: 0,
+814 silly tar     type: 'File',
+814 silly tar     meta: false,
+814 silly tar     ignore: false,
+814 silly tar     path: 'dist/esm/server/route-modules/app-route/helpers/auto-implement-methods.js.map',
+814 silly tar     mode: 438,
+814 silly tar     uid: 0,
+814 silly tar     gid: 0,
+814 silly tar     uname: '',
+814 silly tar     gname: '',
+814 silly tar     size: 4741,
+814 silly tar     mtime: 1985-10-26T08:15:00.000Z,
+814 silly tar     atime: undefined,
+814 silly tar     ctime: undefined,
+814 silly tar     linkpath: undefined,
+814 silly tar     dev: undefined,
+814 silly tar     ino: undefined,
+814 silly tar     nlink: undefined,
+814 silly tar     invalid: false,
+814 silly tar     absolute: 'C:/Users/momon/Documents/Codex/2026-08-09/bu/outputs/english-speaking-partner/node_modules/next/dist/esm/server/route-modules/app-route/helpers/auto-implement-methods.js.map',
+814 silly tar     unsupported: false,
+814 silly tar     Symbol(shapeMode): false,
+814 silly tar     Symbol(kCapture): false,
+814 silly tar     Symbol(flowing): false,
+814 silly tar     Symbol(paused): true,
+814 silly tar     Symbol(pipes): [ [Ht] ],
+814 silly tar     Symbol(buffer): [],
+814 silly tar     Symbol(objectMode): false,
+814 silly tar     Symbol(encoding): null,
+814 silly tar     Symbol(async): false,
+814 silly tar     Symbol(decoder): null,
+814 silly tar     Symbol(EOF): true,
+814 silly tar     Symbol(emittedEnd): true,
+814 silly tar     Symbol(emittingEnd): false,
+814 silly tar     Symbol(closed): false,
+814 silly tar     Symbol(emittedError): null,
+814 silly tar     Symbol(bufferLength): 0,
+814 silly tar     Symbol(destroyed): false,
+814 silly tar     Symbol(signal): undefined,
+814 silly tar     Symbol(aborted): false,
+814 silly tar     Symbol(dataListeners): 0,
+814 silly tar     Symbol(discarded): false
+814 silly tar   },
+814 silly tar   cwd: 'C:/Users/momon/Documents/Codex/2026-08-09/bu/outputs/english-speaking-partner/node_modules/next',
+814 silly tar   tarCode: 'TAR_ENTRY_ERROR'
+814 silly tar }
+815 http fetch GET 200 https://registry.npmjs.org/next/-/next-16.3.0.tgz 90301ms (cache miss)
+816 silly ADD node_modules/@typescript/typescript-win32-x64
+817 silly ADD node_modules/semver
+818 silly ADD node_modules/@img/sharp-win32-x64
+819 silly ADD node_modules/@img/colour
+820 silly ADD node_modules/sharp
+821 silly ADD node_modules/lightningcss-win32-x64-msvc
+822 silly ADD node_modules/detect-libc
+823 silly ADD node_modules/tapable
+824 silly ADD node_modules/@tailwindcss/oxide-win32-x64-msvc
+825 silly ADD node_modules/magic-string
+826 silly ADD node_modules/lightningcss
+827 silly ADD node_modules/enhanced-resolve
+828 silly ADD node_modules/@jridgewell/remapping
+829 silly ADD node_modules/@tailwindcss/oxide
+830 silly ADD node_modules/@tailwindcss/node
+831 silly ADD node_modules/@tailwindcss/postcss
+832 silly REMOVE node_modules/yaml
+833 silly REMOVE node_modules/util-deprecate
+834 silly REMOVE node_modules/update-browserslist-db
+835 silly CHANGE node_modules/undici-types
+836 silly CHANGE node_modules/typescript
+837 silly REMOVE node_modules/ts-interface-checker
+838 silly REMOVE node_modules/to-regex-range
+839 silly REMOVE node_modules/tinyglobby
+840 silly REMOVE node_modules/tinyglobby/node_modules/picomatch
+841 silly REMOVE node_modules/tinyglobby/node_modules/fdir
+842 silly REMOVE node_modules/thenify-all
+843 silly REMOVE node_modules/thenify
+844 silly CHANGE node_modules/tailwindcss
+845 silly REMOVE node_modules/tailwindcss/node_modules/postcss-load-config
+846 silly REMOVE node_modules/tailwindcss/node_modules/postcss-load-config/node_modules/lilconfig
+847 silly REMOVE node_modules/supports-preserve-symlinks-flag
+848 silly REMOVE node_modules/sucrase
+849 silly CHANGE node_modules/styled-jsx
+850 silly REMOVE node_modules/streamsearch
+851 silly CHANGE node_modules/scheduler
+852 silly REMOVE node_modules/run-parallel
+853 silly REMOVE node_modules/reusify
+854 silly REMOVE node_modules/resolve
+855 silly REMOVE node_modules/readdirp
+856 silly REMOVE node_modules/read-cache
+857 silly CHANGE node_modules/react-dom
+858 silly CHANGE node_modules/react
+859 silly REMOVE node_modules/queue-microtask
+860 silly REMOVE node_modules/postcss-value-parser
+861 silly REMOVE node_modules/postcss-selector-parser
+862 silly REMOVE node_modules/postcss-nested
+863 silly REMOVE node_modules/postcss-js
+864 silly REMOVE node_modules/postcss-import
+865 silly CHANGE node_modules/postcss
+866 silly REMOVE node_modules/pirates
+867 silly REMOVE node_modules/pify
+868 silly REMOVE node_modules/picomatch
+869 silly REMOVE node_modules/path-parse
+870 silly REMOVE node_modules/object-hash
+871 silly REMOVE node_modules/object-assign
+872 silly REMOVE node_modules/normalize-range
+873 silly REMOVE node_modules/normalize-path
+874 silly REMOVE node_modules/node-releases
+875 silly CHANGE node_modules/next
+876 silly CHANGE node_modules/next/node_modules/postcss
+877 silly REMOVE node_modules/mz
+878 silly REMOVE node_modules/micromatch
+879 silly REMOVE node_modules/merge2
+880 silly CHANGE node_modules/lucide-react
+881 silly REMOVE node_modules/loose-envify
+882 silly REMOVE node_modules/lines-and-columns
+883 silly REMOVE node_modules/lilconfig
+884 silly REMOVE node_modules/js-tokens
+885 silly CHANGE node_modules/jiti
+886 silly REMOVE node_modules/is-number
+887 silly REMOVE node_modules/is-glob
+888 silly REMOVE node_modules/is-extglob
+889 silly REMOVE node_modules/is-core-module
+890 silly REMOVE node_modules/is-binary-path
+891 silly REMOVE node_modules/hasown
+892 silly REMOVE node_modules/glob-parent
+893 silly REMOVE node_modules/function-bind
+894 silly REMOVE node_modules/fraction.js
+895 silly REMOVE node_modules/fill-range
+896 silly REMOVE node_modules/fastq
+897 silly REMOVE node_modules/fast-glob
+898 silly REMOVE node_modules/fast-glob/node_modules/glob-parent
+899 silly REMOVE node_modules/escalade
+900 silly REMOVE node_modules/es-errors
+901 silly REMOVE node_modules/electron-to-chromium
+902 silly REMOVE node_modules/dlv
+903 silly REMOVE node_modules/didyoumean
+904 silly REMOVE node_modules/cssesc
+905 silly REMOVE node_modules/commander
+906 silly REMOVE node_modules/chokidar
+907 silly REMOVE node_modules/chokidar/node_modules/glob-parent
+908 silly REMOVE node_modules/camelcase-css
+909 silly REMOVE node_modules/busboy
+910 silly REMOVE node_modules/browserslist
+911 silly REMOVE node_modules/braces
+912 silly REMOVE node_modules/binary-extensions
+913 silly REMOVE node_modules/autoprefixer
+914 silly REMOVE node_modules/arg
+915 silly REMOVE node_modules/anymatch
+916 silly REMOVE node_modules/any-promise
+917 silly CHANGE node_modules/@types/react-dom
+918 silly CHANGE node_modules/@types/react
+919 silly REMOVE node_modules/@types/prop-types
+920 silly CHANGE node_modules/@types/node
+921 silly CHANGE node_modules/@swc/helpers
+922 silly REMOVE node_modules/@swc/counter
+923 silly REMOVE node_modules/@nodelib/fs.walk
+924 silly REMOVE node_modules/@nodelib/fs.stat
+925 silly REMOVE node_modules/@nodelib/fs.scandir
+926 silly CHANGE node_modules/@next/swc-win32-x64-msvc
+927 silly CHANGE node_modules/@next/env
+928 verbose cwd C:\Users\momon\Documents\Codex\2026-08-09\bu\outputs\english-speaking-partner
+929 verbose os Windows_NT 10.0.26200
+930 verbose node v24.19.0
+931 verbose npm  v11.17.0
+932 verbose exit 0
+933 info ok
