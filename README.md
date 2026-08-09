@@ -1,4 +1,4 @@
-# English Speaking Partner
+# Duolingi
 
 A Next.js + Tailwind implementation of the picture-description speaking exercise.
 
