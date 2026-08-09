@@ -328,6 +328,10 @@
     display: grid;
   }
 
+  .hidden {
+    display: none;
+  }
+
   .inline {
     display: inline;
   }
@@ -338,6 +342,10 @@
 
   .w-9 {
     width: calc(var(--spacing) * 9);
+  }
+
+  .grow {
+    flex-grow: 1;
   }
 
   .transform {

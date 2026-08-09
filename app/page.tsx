@@ -2,10 +2,24 @@
 
 import { ChangeEvent, useEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, Camera, Check, ChevronRight, Clock3, ImageIcon, ImagePlus, Mic, Pause, Play, RotateCcw, Shuffle, Sparkles, Trophy, Upload, Volume2 } from 'lucide-react';
+import topics from './data/speaking-topics.json';
 
-type Screen = 'dashboard' | 'setup' | 'prep' | 'speak' | 'done';
+type Screen = 'dashboard' | 'setup' | 'prep' | 'speak' | 'done' | 'sample';
 const PREP_SECONDS = 20;
 const SPEAK_SECONDS = 90;
+
+function SpeakingSample({ back }: { back: () => void }) {
+  const [topic, setTopic] = useState(topics[0]), [phase, setPhase] = useState<'choose'|'prep'|'speak'|'done'>('choose'), [left, setLeft] = useState(30), [paused, setPaused] = useState(false);
+  useEffect(() => { if (phase !== 'prep' && (phase !== 'speak' || paused)) return; if (left <= 0) { if (phase === 'prep') { setPhase('speak'); setLeft(180); } else setPhase('done'); return; } const id = setTimeout(() => setLeft(v => v - 1), 1000); return () => clearTimeout(id); }, [phase, left, paused]);
+  const random = () => setTopic(topics[Math.floor(Math.random() * topics.length)]);
+  if (phase === 'choose') return <section className="page sample"><button className="back" onClick={back}><ArrowLeft size={17}/> ALL MODULES</button><div className="heading"><span className="eyebrow"><Mic size={15}/> SPEAKING SAMPLE</span><h2>Choose a topic</h2><p>You’ll have 30 seconds to prepare, then 3 minutes to speak.</p></div><div className="sample-layout"><div className="topic-list"><div className="library-title"><h3>Topic bank</h3><button className="random" onClick={random}><Shuffle size={16}/> Random topic</button></div>{topics.map(item => <button className={`topic-row ${topic.id === item.id ? 'chosen':''}`} onClick={() => setTopic(item)} key={item.id}><span>{item.title}</span>{topic.id === item.id && <Check size={17}/>}</button>)}</div><div className="topic-preview"><span className="eyebrow">YOUR TOPIC</span><h3>{topic.title}</h3><p>{topic.prompt}</p><Button onClick={() => { setLeft(30); setPhase('prep'); }}>Start practice <ArrowRight size={19}/></Button></div></div></section>;
+  if (phase === 'done') return <section className="page done"><div className="trophy"><Trophy size={52}/></div><h2>Great speaking!</h2><p>You completed a three-minute speaking sample.</p><div className="topic-done"><strong>{topic.title}</strong><p>{topic.prompt}</p></div><div className="actions"><Button onClick={() => setPhase('choose')}>Choose another topic</Button><Button kind="secondary" onClick={back}>Back to modules</Button></div></section>;
+  const prep = phase === 'prep'; return <section className="page stage sample-stage"><div className="stage-top"><div><span className="eyebrow"><Mic size={15}/> {prep ? 'PREPARATION TIME' : 'SPEAKING SAMPLE'}</span><h2>{prep ? 'Get ready!' : 'Speak now!'}</h2><p>{prep ? 'Think of ideas, examples, and useful vocabulary.' : 'Share your ideas clearly and in detail.'}</p></div><Timer remaining={left} total={prep ? 30 : 180} label={prep ? 'PREP' : 'LEFT'} danger={!prep}/></div><div className="prompt-box"><span>TOPIC</span><h3>{topic.title}</h3><p>{topic.prompt}</p></div><div className="actions">{prep ? <Button onClick={() => { setLeft(180); setPhase('speak'); }}>Skip prep <ArrowRight size={18}/></Button> : <><Button kind="secondary" onClick={() => setPaused(!paused)}>{paused ? <Play size={18}/> : <Pause size={18}/>} {paused ? 'Resume' : 'Pause'}</Button><Button kind="danger" onClick={() => setPhase('done')}>Finish early</Button></>}</div></section>;
+}
+
+function PracticeDashboard({ picture, sample }: { picture: () => void; sample: () => void }) {
+  return <section className="page"><div className="hero"><div><span className="eyebrow"><Sparkles size={15}/> YOUR SPEAKING SPACE</span><h2>What would you like<br/>to practice today?</h2><p>Small speaking moments add up to big confidence.</p></div><Mascot /></div><div className="modules"><button className="module featured" onClick={picture}><i><Camera size={30}/></i><div><em>PICTURE PRACTICE</em><h3>Talk about the Picture</h3><p>Look closely, find the words, and speak freely.</p></div><ChevronRight /></button><button className="module sample-module" onClick={sample}><i><Mic size={29}/></i><div><em>NEW</em><h3>Speaking Sample</h3><p>Prepare for 30 seconds, then speak for 3 minutes.</p></div><ChevronRight /></button></div></section>;
+}
 
 function SetupList({ image, select, libraryImages, libraryLoaded, pickLibrary, start, back }: { image:string|null;select:(e:ChangeEvent<HTMLInputElement>)=>void;libraryImages:string[];libraryLoaded:boolean;pickLibrary:(src:string)=>void;start:()=>void;back:()=>void }) {
   const randomPick = () => { if (libraryImages.length) pickLibrary(libraryImages[Math.floor(Math.random() * libraryImages.length)]); };
@@ -33,7 +47,8 @@ export default function Home() {
   function finish() { if (recorder.current?.state && recorder.current.state !== 'inactive') recorder.current.stop(); setScreen('done'); }
   function reset() { recorder.current?.stop(); if (image) URL.revokeObjectURL(image); setImage(null); setAudioUrl(null); setScreen('setup'); }
   return <main><header className="topbar"><div className="brand"><Mascot small /><div><h1>English Speaking Partner</h1><p>Build confidence, one conversation at a time.</p></div></div><nav><button className="active">Practice</button><button>Progress</button><button>Tips</button></nav><div className="streak">🔥 <b>7</b><small>day streak</small></div></header>
-    {screen === 'dashboard' && <Dashboard go={() => setScreen('setup')} />}
+    {screen === 'dashboard' && <PracticeDashboard picture={() => setScreen('setup')} sample={() => setScreen('sample')} />}
+    {screen === 'sample' && <SpeakingSample back={() => setScreen('dashboard')} />}
     {screen === 'setup' && <SetupList image={image} select={fileSelected} libraryImages={libraryImages} libraryLoaded={libraryLoaded} pickLibrary={selectLibraryImage} start={() => image && setScreen('prep')} back={() => setScreen('dashboard')} />}
     {screen === 'prep' && image && <Stage image={image} prep left={prepLeft} skip={startSpeaking} back={() => setScreen('setup')} />}
     {screen === 'speak' && image && <Stage image={image} left={speakLeft} paused={paused} pause={() => { paused ? recorder.current?.resume() : recorder.current?.pause(); setPaused(!paused); }} finish={finish} restart={() => { recorder.current?.stop(); setSpeakLeft(SPEAK_SECONDS); setElapsed(0); startSpeaking(); }} />}

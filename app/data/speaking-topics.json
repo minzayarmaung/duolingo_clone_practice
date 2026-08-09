@@ -1,0 +1,192 @@
+[
+  {
+    "id": "home",
+    "title": "Home",
+    "prompt": "Describe what makes a place feel warm and comfortable. Besides a physical building, what things or people make you feel like you belong? Can a person feel at home in a country they have never lived in before?"
+  },
+  {
+    "id": "social-media",
+    "title": "Social Media",
+    "prompt": "Talk about how social media has changed the way people talk to each other today. What are the good and bad sides of using these platforms? How can people use social media without wasting too much time?"
+  },
+  {
+    "id": "travel",
+    "title": "Travel",
+    "prompt": "Describe a trip or vacation that you will always remember. Is it more important to visit famous places or to spend time with interesting people when traveling? How can visiting a new place change how you see the world?"
+  },
+  {
+    "id": "money",
+    "title": "Money",
+    "prompt": "Explain what being financially successful means to you. How much does money really help a person be happy in life? What are some important things in life that money can never buy?"
+  },
+  {
+    "id": "education",
+    "title": "Education",
+    "prompt": "Describe the qualities of a great student. Besides school subjects like math and science, what practical life skills should schools teach young people? How can someone keep learning after they finish school?"
+  },
+  {
+    "id": "artificial-intelligence",
+    "title": "Artificial Intelligence",
+    "prompt": "Talk about how AI tools and technology are changing our daily routines. In what ways can AI help people in their jobs, and what problems might happen if we depend on it too much?"
+  },
+  {
+    "id": "success",
+    "title": "Success",
+    "prompt": "Explain what success means to you personally. Is success mostly about having a good career and making a lot of money, or can it mean something else? How do you know when you have achieved it?"
+  },
+  {
+    "id": "friendship",
+    "title": "Friendship",
+    "prompt": "Describe the main qualities that make someone a good friend. As people grow older and get busier, how can they keep their friendships strong? What is the best way to handle an argument with a friend?"
+  },
+  {
+    "id": "failure",
+    "title": "Failure",
+    "prompt": "Talk about a time when something did not go as planned. Why is making mistakes often a necessary step toward learning something new? How can a person stay positive after experiencing failure?"
+  },
+  {
+    "id": "time",
+    "title": "Time",
+    "prompt": "Discuss how you like to spend your free time on weekends. Why do so many people feel like they never have enough time during the week? What can people do to manage their time better?"
+  },
+  {
+    "id": "live-anywhere",
+    "title": "If You Could Live Anywhere",
+    "prompt": "Imagine you could move to any country in the world for one year. Where would you choose to go and why? What would be difficult about living there, and how might the experience change you?"
+  },
+  {
+    "id": "dreams",
+    "title": "Dreams",
+    "prompt": "Describe an important goal you hope to achieve in the future. Why is this goal important to you, and what steps do you need to take to reach it? What challenges might stand in your way?"
+  },
+  {
+    "id": "memories",
+    "title": "Memories",
+    "prompt": "Tell a story about a special memory from your childhood or past. What happened, and why is this memory so clear in your mind today? How has that experience influenced who you are now?"
+  },
+  {
+    "id": "city-countryside",
+    "title": "City vs Countryside",
+    "prompt": "Compare life in a big, busy city with life in a quiet village or countryside. What are the advantages and disadvantages of living in each place? Which location do you prefer and why?"
+  },
+  {
+    "id": "books-movies",
+    "title": "Books vs Movies",
+    "prompt": "Explain what makes a story really exciting or interesting to you. Do you prefer reading books or watching movies when you want a good story? Why do many people say the book is usually better than the movie?"
+  },
+  {
+    "id": "video-games",
+    "title": "Video Games",
+    "prompt": "Discuss why video games are so popular with people of all ages today. What useful skills, like teamwork or problem-solving, can people learn from playing games? When does playing games become a bad habit?"
+  },
+  {
+    "id": "daily-habits",
+    "title": "Daily Habits",
+    "prompt": "Describe a positive daily habit that has improved your health or routine. Why did you decide to start this habit? How do you make sure you stick to it even when you are busy or tired?"
+  },
+  {
+    "id": "healthy-lifestyle",
+    "title": "Healthy Lifestyle",
+    "prompt": "Explain what living a healthy life means to you. Is eating good food, exercising, or getting enough sleep the most important part? Why do many people find it difficult to maintain healthy habits?"
+  },
+  {
+    "id": "life-without-phones",
+    "title": "Life Without Phones",
+    "prompt": "Imagine you had to live without your smartphone for a full month. What daily tasks would become very difficult to do? What might you enjoy more about life without a screen?"
+  },
+  {
+    "id": "past-future",
+    "title": "Past vs Future",
+    "prompt": "If you could travel in time, would you choose to go to the past or the future? What period or year would you visit, and what questions would you hope to answer while you were there?"
+  },
+  {
+    "id": "work",
+    "title": "Work",
+    "prompt": "Describe what makes a job enjoyable and satisfying to do every day. Is having a high salary more important than doing work that you love? How do people find a good balance between work and personal life?"
+  },
+  {
+    "id": "working-from-home",
+    "title": "Working From Home",
+    "prompt": "Talk about the good and bad sides of working or studying from home instead of going to an office or school. What makes working from home convenient, and why might some people feel lonely or stressed doing it?"
+  },
+  {
+    "id": "technology",
+    "title": "Technology",
+    "prompt": "Describe one piece of technology that has changed your daily life the most. What everyday problem did this technology solve for you, and what new problems might it create if people use it too much?"
+  },
+  {
+    "id": "fame",
+    "title": "Fame",
+    "prompt": "Discuss why so many people dream of being famous or popular on the internet. Would you want to be a famous person yourself? What problems might famous people face regarding their privacy?"
+  },
+  {
+    "id": "happiness",
+    "title": "Happiness",
+    "prompt": "Explain what makes you feel truly happy in your everyday life. Does real happiness come more from buying new things or from having good experiences and relationships? How can people stay positive during difficult times?"
+  },
+  {
+    "id": "living-abroad",
+    "title": "Living Abroad",
+    "prompt": "Discuss what would be exciting and challenging about moving to a different country. How can someone prepare for language barriers and cultural differences? How might living abroad help a person grow?"
+  },
+  {
+    "id": "communication",
+    "title": "Communication",
+    "prompt": "Describe what makes someone a great communicator when talking to others. Why do misunderstandings happen so easily between people? What can you do to be a better listener?"
+  },
+  {
+    "id": "future",
+    "title": "The Future",
+    "prompt": "Predict what daily life will look like 20 years from now. What technologies or habits that we use today do you think will disappear? What new inventions do you hope to see in the future?"
+  },
+  {
+    "id": "million-dollars",
+    "title": "A Million Dollars",
+    "prompt": "Imagine you won one million dollars in a lottery tomorrow. What is the first thing you would buy, and how would you save or invest the rest? How do you think this money would change your life?"
+  },
+  {
+    "id": "history-dinner",
+    "title": "Dinner With History",
+    "prompt": "Imagine you could have dinner with any famous person from history. Who would you invite to dinner and why? What interesting questions would you ask them about their life or decisions?"
+  },
+  {
+    "id": "country-leader",
+    "title": "Leader for a Year",
+    "prompt": "Imagine you were chosen to lead your country for one year. What is the main problem in your country that you would try to fix first? What new rules or laws would you make to help people?"
+  },
+  {
+    "id": "desert-island",
+    "title": "Deserted Island",
+    "prompt": "Imagine you had to live on a small island alone for one year. What three everyday objects would you bring with you to survive? How would you keep yourself busy and happy while living alone?"
+  },
+  {
+    "id": "invention",
+    "title": "Remove an Invention",
+    "prompt": "Choose one modern invention that you would remove from the world completely if you could. Why do you think life would be better without this invention? How would society change as a result?"
+  },
+  {
+    "id": "advice",
+    "title": "Advice to Your Younger Self",
+    "prompt": "If you could talk to yourself when you were 15 years old, what advice would you give? What mistakes would you warn yourself about, and what encouraging words would you say about the future?"
+  },
+  {
+    "id": "busy-city",
+    "title": "A Busy City",
+    "prompt": "Describe what it is like to walk through a busy city center. What are the advantages of having so many shops, restaurants, and people nearby? Why might living in a crowded city feel stressful for some people?"
+  },
+  {
+    "id": "family-dinner",
+    "title": "Family Dinner",
+    "prompt": "Explain why eating meals together with family or friends is an important tradition. How does sharing food help people stay close to one another? How has mealtime changed in modern households?"
+  },
+  {
+    "id": "working",
+    "title": "Working",
+    "prompt": "Describe what makes a workplace friendly, safe, and productive. What can managers or companies do to make their workers feel valued? How do good co-workers make a job much easier?"
+  },
+  {
+    "id": "nature",
+    "title": "Nature",
+    "prompt": "Discuss why spending time outdoors in nature makes people feel calm and healthy. What are your favorite outdoor activities to do? What simple things can communities do to protect parks and green spaces?"
+  }
+]

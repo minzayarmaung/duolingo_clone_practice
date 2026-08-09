@@ -13,6 +13,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
+;
 const metadata = {
     title: 'English Speaking Partner',
     description: 'Friendly speaking practice'
@@ -24,12 +25,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 9,
+            lineNumber: 10,
             columnNumber: 26
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 10
     }, this);
 }

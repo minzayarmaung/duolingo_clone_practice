@@ -1,13 +1,14 @@
-{"timestamp":"00:00:15.801","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:15.801","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
-{"timestamp":"00:00:15.802","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
-{"timestamp":"00:00:15.804","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/dev/types/**/*.ts'"}
-{"timestamp":"00:00:15.807","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:15.808","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
-{"timestamp":"00:00:15.810","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
-{"timestamp":"00:00:15.810","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:16.297","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:19.360","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:00:26.197","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:03:20.886","source":"Server","level":"LOG","message":"✓ Compiled in 937ms"}
-{"timestamp":"00:05:29.522","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:09.823","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:09.833","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
+{"timestamp":"00:00:09.849","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
+{"timestamp":"00:00:09.863","source":"Server","level":"LOG","message":"  \t- target was set to ES2017 (For top-level `await`. Note: Next.js only polyfills for the esmodules target.)"}
+{"timestamp":"00:00:09.864","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:10.958","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:14.542","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:17.158","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:00.061","source":"Server","level":"LOG","message":"✓ Compiled in 819ms"}
+{"timestamp":"00:01:07.175","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:01:14.864","source":"Server","level":"LOG","message":"✓ Compiled in 358ms"}
+{"timestamp":"00:01:17.559","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:02:51.165","source":"Server","level":"LOG","message":"✓ Compiled in 346ms"}
+{"timestamp":"00:02:53.248","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
