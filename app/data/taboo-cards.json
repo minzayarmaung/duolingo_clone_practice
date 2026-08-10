@@ -38,5 +38,8 @@
   { "id": 37, "title": "37 — WEDDING", "word": "Wedding", "forbidden": ["Marriage", "Bride", "Groom", "Ring", "Ceremony"], "level": "FUN", "category": "Fun" },
   { "id": 38, "title": "38 — SUPERMAN", "word": "Superman", "forbidden": ["Hero", "Fly", "Cape", "Superpower", "Kryptonite"], "level": "FUN", "category": "Fun" },
   { "id": 39, "title": "39 — NETFLIX", "word": "Netflix", "forbidden": ["Movie", "Series", "Watch", "Streaming", "TV"], "level": "FUN", "category": "Fun" },
-  { "id": 40, "title": "40 — COFFEE", "word": "Coffee", "forbidden": ["Drink", "Tea", "Caffeine", "Cup", "Morning"], "level": "FUN", "category": "Fun" }
+  { "id": 40, "title": "40 — COFFEE", "word": "Coffee", "forbidden": ["Drink", "Tea", "Caffeine", "Cup", "Morning"], "level": "FUN", "category": "Fun" },
+  { "id": 41, "title": "41 — Lesbian", "word": "Lesbian", "forbidden": ["Female", "Kiss", "Love", "Relationship", "Gender"], "level": "FUN", "category": "Fun" },
+  { "id": 42, "title": "42 — Gay", "word": "Gay", "forbidden": ["Male", "Homosexual", "Love", "Relationship", "Gender"], "level": "FUN", "category": "Fun" }
+
 ]
