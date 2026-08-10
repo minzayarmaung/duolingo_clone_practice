@@ -4,10 +4,23 @@ import { ChangeEvent, useEffect, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, Camera, Check, ChevronRight, Clock3, ImageIcon, ImagePlus, Mic, Pause, Play, RotateCcw, Shuffle, Sparkles, Trophy, Upload, Users, Volume2 } from 'lucide-react';
 import topics from './data/speaking-topics.json';
 import roleTopics from './data/roleplay-topics.json';
+import tabooCardsData from './data/taboo-cards.json';
 
-type Screen = 'dashboard' | 'setup' | 'prep' | 'speak' | 'done' | 'sample' | 'roleplay';
+type Screen = 'dashboard' | 'setup' | 'prep' | 'speak' | 'done' | 'sample' | 'roleplay' | 'taboo';
 const PREP_SECONDS = 20;
 const SPEAK_SECONDS = 90;
+const TABOO_SECONDS = 60;
+
+type TabooCard = {
+  id: number;
+  title: string;
+  word: string;
+  forbidden: string[];
+  level: 'EASY' | 'MEDIUM' | 'HARD' | 'FUN';
+  category: string;
+};
+
+const tabooCards: TabooCard[] = tabooCardsData as TabooCard[];
 
 function RolePlay({ back }: { back: () => void }) {
   const [topic, setTopic] = useState(roleTopics[0]);
@@ -39,13 +52,60 @@ function SpeakingSample({ back }: { back: () => void }) {
   const prep = phase === 'prep'; return <section className="page stage sample-stage"><div className="stage-top"><div><span className="eyebrow"><Mic size={15}/> {prep ? 'PREPARATION TIME' : 'SPEAKING SAMPLE'}</span><h2>{prep ? 'Get ready!' : 'Speak now!'}</h2><p>{prep ? 'Think of ideas, examples, and useful vocabulary.' : 'Share your ideas clearly and in detail.'}</p></div><Timer remaining={left} total={prep ? 30 : 180} label={prep ? 'PREP' : 'LEFT'} danger={!prep}/></div><div className="prompt-box"><span>TOPIC</span><h3>{topic.title}</h3><p>{topic.prompt}</p></div><div className="actions">{prep ? <Button onClick={() => { setLeft(180); setPhase('speak'); }}>Skip prep <ArrowRight size={18}/></Button> : <><Button kind="secondary" onClick={() => setPaused(!paused)}>{paused ? <Play size={18}/> : <Pause size={18}/>} {paused ? 'Resume' : 'Pause'}</Button><Button kind="danger" onClick={() => setPhase('done')}>Finish early</Button></>}</div></section>;
 }
 
-function PracticeDashboard({ picture, sample, roleplay }: { picture: () => void; sample: () => void; roleplay: () => void }) {
-  return <section className="page"><div className="hero"><div><span className="eyebrow"><Sparkles size={15}/> YOUR SPEAKING SPACE</span><h2>What would you like<br/>to practice today?</h2><p>Small speaking moments add up to big confidence.</p></div><Mascot /></div><div className="modules"><button className="module featured" onClick={picture}><i><Camera size={30}/></i><div><em>PICTURE PRACTICE</em><h3>Talk about the Picture</h3><p>Look closely, find the words, and speak freely.</p></div><ChevronRight /></button><button className="module sample-module" onClick={sample}><i><Mic size={29}/></i><div><em>NEW</em><h3>Speaking Sample</h3><p>Prepare for 30 seconds, then speak for 3 minutes.</p></div><ChevronRight /></button><button className="module roleplay-module" onClick={roleplay}><i><Users size={29}/></i><div><em>FUNGLISH</em><h3>Role Play</h3><p>Take a role, solve a challenge, and talk together.</p></div><ChevronRight /></button></div></section>;
+function PracticeDashboard({ picture, sample, roleplay, taboo }: { picture: () => void; sample: () => void; roleplay: () => void; taboo: () => void }) {
+  return <section className="page"><div className="hero"><div><span className="eyebrow"><Sparkles size={15}/> YOUR SPEAKING SPACE</span><h2>What would you like<br/>to practice today?</h2><p>Small speaking moments add up to big confidence.</p></div><Mascot /></div><div className="modules"><button className="module featured" onClick={picture}><i><Camera size={30}/></i><div><em>PICTURE PRACTICE</em><h3>Talk about the Picture</h3><p>Look closely, find the words, and speak freely.</p></div><ChevronRight /></button><button className="module sample-module" onClick={sample}><i><Mic size={29}/></i><div><em>NEW</em><h3>Speaking Sample</h3><p>Prepare for 30 seconds, then speak for 3 minutes.</p></div><ChevronRight /></button><button className="module roleplay-module" onClick={roleplay}><i><Users size={29}/></i><div><em>FUNGLISH</em><h3>Role Play</h3><p>Take a role, solve a challenge, and talk together.</p></div><ChevronRight /></button><button className="module taboo-module" onClick={taboo}><i><Sparkles size={29}/></i><div><em>FUNGLISH</em><h3>Taboo Game</h3><p>Describe the target word and avoid the forbidden words.</p></div><ChevronRight /></button></div></section>;
 }
 
 function SetupList({ image, select, libraryImages, libraryLoaded, pickLibrary, start, back }: { image:string|null;select:(e:ChangeEvent<HTMLInputElement>)=>void;libraryImages:string[];libraryLoaded:boolean;pickLibrary:(src:string)=>void;start:()=>void;back:()=>void }) {
   const randomPick = () => { if (libraryImages.length) pickLibrary(libraryImages[Math.floor(Math.random() * libraryImages.length)]); };
   return <section className="page setup"><button className="back" onClick={back}><ArrowLeft size={17}/> ALL MODULES</button><div className="heading"><span className="eyebrow"><Camera size={15}/> TALK ABOUT THE PICTURE</span><h2>Choose a picture to describe</h2><p>Choose a saved picture or upload your own.</p></div><div className="list-picker-layout"><div className="library-pane"><div className="library-title"><div><span className="eyebrow"><ImageIcon size={15}/> YOUR PICTURE LIBRARY</span><h3>Choose a saved picture</h3></div><button className="random" onClick={randomPick} disabled={!libraryImages.length}><Shuffle size={16}/> Random photo</button></div><div className="library-list">{libraryImages.map(src => <button key={src} className={`list-photo ${image === src ? 'chosen' : ''}`} onClick={() => pickLibrary(src)}><img src={src} alt="Practice photo option"/><span>{decodeURIComponent(src.split('/').pop() ?? '').replace(/[-_]/g, ' ').replace(/\.[^/.]+$/, '')}</span>{image === src && <Check size={18}/>}</button>)}{libraryLoaded && !libraryImages.length && <div className="empty-library"><ImageIcon size={31}/><strong>Your library is ready</strong><p>Add image files to <code>public/practice-images</code> and they will appear here.</p></div>}{!libraryLoaded && <div className="empty-library">Loading your saved pictures…</div>}</div></div><div className="preview-pane"><label className="drop">{image ? <img src={image} alt="Selected picture preview"/> : <><i><ImagePlus size={36}/></i><h3>Upload a picture</h3><p>Choose one from your device</p><b><Upload size={17}/> Upload a photo</b></>}<input type="file" accept="image/*" onChange={select}/></label>{image && <div className="preview-start"><span><Check size={18}/> Picture ready!</span><Button onClick={start}>Start practice <ArrowRight size={19}/></Button></div>}</div></div></section>;
+}
+
+function TabooGame({ back }: { back: () => void }) {
+  const [card, setCard] = useState(tabooCards[0]);
+  const [phase, setPhase] = useState<'choose' | 'play' | 'done'>('choose');
+  const [left, setLeft] = useState(TABOO_SECONDS);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (phase !== 'play' || paused) return;
+    if (left <= 0) { setPhase('done'); return; }
+    const id = setTimeout(() => setLeft(value => value - 1), 1000);
+    return () => clearTimeout(id);
+  }, [phase, left, paused]);
+
+  const randomCard = () => {
+    const next = tabooCards[Math.floor(Math.random() * tabooCards.length)];
+    setCard(next);
+    setLeft(TABOO_SECONDS);
+    setPaused(false);
+  };
+
+  const selectCard = (item: TabooCard) => {
+    setCard(item);
+    setLeft(TABOO_SECONDS);
+    setPaused(false);
+  };
+
+  const startRound = () => {
+    setLeft(TABOO_SECONDS);
+    setPaused(false);
+    setPhase('play');
+  };
+
+  const nextCard = () => {
+    const index = tabooCards.findIndex(item => item.id === card.id);
+    const next = tabooCards[(index + 1) % tabooCards.length];
+    setCard(next);
+    setLeft(TABOO_SECONDS);
+    setPaused(false);
+  };
+
+  if (phase === 'choose') return <section className="page taboo"><button className="back" onClick={back}><ArrowLeft size={17}/> ALL MODULES</button><div className="heading"><span className="eyebrow purple"><Sparkles size={15}/> FUNGLISH · TABOO GAME</span><h2>Pick a card and describe the word</h2><p>Try to explain the target word without saying the forbidden words. One minute per card.</p></div><div className="taboo-layout"><div className="topic-list"><div className="library-title"><h3>Card bank</h3><button className="random" onClick={randomCard}><Shuffle size={16}/> Random card</button></div>{tabooCards.map(item => <button className={`topic-row ${card.id === item.id ? 'chosen' : ''}`} onClick={() => selectCard(item)} key={item.id}><span>{item.title}</span><small className={`taboo-chip ${item.level.toLowerCase()}`}>{item.level}</small>{card.id === item.id && <Check size={17}/>}</button>)}</div><div className="taboo-preview"><span className="eyebrow purple">YOUR CARD</span><h3>{card.word}</h3><p className="taboo-meta">{card.category} · {card.level}</p><div className="forbidden-list">{card.forbidden.map(word => <span key={word} className="forbidden-pill">{word}</span>)}</div><Button onClick={startRound}>Start round <ArrowRight size={19}/></Button></div></div></section>;
+
+  if (phase === 'done') return <section className="page done"><div className="trophy"><Trophy size={52}/></div><h2>Great round!</h2><p>You completed a Taboo challenge and kept the language flowing.</p><div className="topic-done"><strong>{card.word}</strong><p>{card.category} · {card.level}</p></div><div className="actions"><Button onClick={() => { setPhase('choose'); setLeft(TABOO_SECONDS); setPaused(false); }}>Play another card</Button><Button kind="secondary" onClick={back}>Back to modules</Button></div></section>;
+
+  return <section className="page stage taboo-stage"><div className="stage-top"><div><span className="eyebrow purple"><Sparkles size={15}/> TABOO GAME</span><h2>Explain the word!</h2><p>Describe {card.word} without saying the forbidden words. Your partner can guess it.</p></div><Timer remaining={left} total={TABOO_SECONDS} label="LEFT" danger /></div><div className="taboo-board"><div className="taboo-target"><span className="eyebrow purple">TARGET WORD</span><h3>{card.word}</h3></div><div className="taboo-forbidden"><span className="eyebrow">FORBIDDEN WORDS</span><div className="forbidden-list">{card.forbidden.map(word => <span key={word} className="forbidden-pill">{word}</span>)}</div></div></div><div className="actions"><Button kind="secondary" onClick={() => setPaused(value => !value)}>{paused ? <Play size={18}/> : <Pause size={18}/>} {paused ? 'Resume' : 'Pause'}</Button><Button onClick={nextCard}>Next card <ArrowRight size={18}/></Button><Button kind="danger" onClick={() => setPhase('done')}><Check size={18}/> Finish</Button></div></section>;
 }
 
 function Button({ children, onClick, kind = 'primary' }: { children: React.ReactNode; onClick?: () => void; kind?: 'primary' | 'secondary' | 'danger' }) {
@@ -69,9 +129,10 @@ export default function Home() {
   function finish() { if (recorder.current?.state && recorder.current.state !== 'inactive') recorder.current.stop(); setScreen('done'); }
   function reset() { recorder.current?.stop(); if (image) URL.revokeObjectURL(image); setImage(null); setAudioUrl(null); setScreen('setup'); }
   return <main><header className="topbar"><div className="brand"><Mascot small /><div><h1>Duolingi</h1><p>Build confidence, one conversation at a time.</p></div></div><nav><button className="active">Practice</button><button>Progress</button><button>Tips</button></nav><div className="streak">🔥 <b>7</b><small>day streak</small></div></header>
-    {screen === 'dashboard' && <PracticeDashboard picture={() => setScreen('setup')} sample={() => setScreen('sample')} roleplay={() => setScreen('roleplay')} />}
+    {screen === 'dashboard' && <PracticeDashboard picture={() => setScreen('setup')} sample={() => setScreen('sample')} roleplay={() => setScreen('roleplay')} taboo={() => setScreen('taboo')} />}
     {screen === 'sample' && <SpeakingSample back={() => setScreen('dashboard')} />}
     {screen === 'roleplay' && <RolePlay back={() => setScreen('dashboard')} />}
+    {screen === 'taboo' && <TabooGame back={() => setScreen('dashboard')} />}
     {screen === 'setup' && <SetupList image={image} select={fileSelected} libraryImages={libraryImages} libraryLoaded={libraryLoaded} pickLibrary={selectLibraryImage} start={() => image && setScreen('prep')} back={() => setScreen('dashboard')} />}
     {screen === 'prep' && image && <Stage image={image} prep left={prepLeft} skip={startSpeaking} back={() => setScreen('setup')} />}
     {screen === 'speak' && image && <Stage image={image} left={speakLeft} paused={paused} pause={() => { paused ? recorder.current?.resume() : recorder.current?.pause(); setPaused(!paused); }} finish={finish} restart={() => { recorder.current?.stop(); setSpeakLeft(SPEAK_SECONDS); setElapsed(0); startSpeaking(); }} />}
