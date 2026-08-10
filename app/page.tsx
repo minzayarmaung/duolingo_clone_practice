@@ -1,12 +1,34 @@
 'use client';
 
 import { ChangeEvent, useEffect, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, Camera, Check, ChevronRight, Clock3, ImageIcon, ImagePlus, Mic, Pause, Play, RotateCcw, Shuffle, Sparkles, Trophy, Upload, Volume2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Camera, Check, ChevronRight, Clock3, ImageIcon, ImagePlus, Mic, Pause, Play, RotateCcw, Shuffle, Sparkles, Trophy, Upload, Users, Volume2 } from 'lucide-react';
 import topics from './data/speaking-topics.json';
+import roleTopics from './data/roleplay-topics.json';
 
-type Screen = 'dashboard' | 'setup' | 'prep' | 'speak' | 'done' | 'sample';
+type Screen = 'dashboard' | 'setup' | 'prep' | 'speak' | 'done' | 'sample' | 'roleplay';
 const PREP_SECONDS = 20;
 const SPEAK_SECONDS = 90;
+
+function RolePlay({ back }: { back: () => void }) {
+  const [topic, setTopic] = useState(roleTopics[0]);
+  const [phase, setPhase] = useState<'choose' | 'prep' | 'talk' | 'done'>('choose');
+  const [left, setLeft] = useState(PREP_SECONDS);
+  const [paused, setPaused] = useState(false);
+  useEffect(() => {
+    if (phase === 'choose' || phase === 'done' || (phase === 'talk' && paused)) return;
+    if (left <= 0) { if (phase === 'prep') { setPhase('talk'); setLeft(300); } else setPhase('done'); return; }
+    const id = setTimeout(() => setLeft(value => value - 1), 1000);
+    return () => clearTimeout(id);
+  }, [phase, left, paused]);
+  const choose = (item: typeof roleTopics[number]) => { setTopic(item); setLeft(PREP_SECONDS); };
+  const start = () => { setLeft(PREP_SECONDS); setPaused(false); setPhase('prep'); };
+  if (phase === 'choose') return <section className="page roleplay"><button className="back" onClick={back}><ArrowLeft size={17}/> ALL MODULES</button><div className="heading"><span className="eyebrow purple"><Users size={15}/> FUNGLISH · ROLE PLAY</span><h2>Choose a conversation</h2><p>Pick a real-life situation together, then prepare for 20 seconds and talk for 5 minutes.</p></div><div className="role-layout"><div className="topic-list role-list"><div className="library-title"><h3>Role play bank</h3><button className="random" onClick={() => choose(roleTopics[Math.floor(Math.random() * roleTopics.length)])}><Shuffle size={16}/> Random topic</button></div>{roleTopics.map(item => <button className={`topic-row ${topic.id === item.id ? 'chosen' : ''}`} onClick={() => choose(item)} key={item.id}><span>{item.title}</span>{topic.id === item.id && <Check size={17}/>}</button>)}</div><RoleCards topic={topic} preview/><div className="role-start"><Button onClick={start}>Start role play <ArrowRight size={19}/></Button></div></div></section>;
+  if (phase === 'done') return <section className="page done"><div className="trophy"><Trophy size={52}/></div><h2>Great conversation!</h2><p>You completed a five-minute role play.</p><div className="topic-done"><strong>{topic.title}</strong><p>{topic.challenge}</p></div><div className="actions"><Button onClick={() => setPhase('choose')}>Choose another topic</Button><Button kind="secondary" onClick={back}>Back to modules</Button></div></section>;
+  const preparing = phase === 'prep';
+  return <section className="page stage role-stage"><div className="stage-top"><div><span className="eyebrow purple"><Users size={15}/> {preparing ? 'PREPARATION TIME' : 'ROLE PLAY IN PROGRESS'}</span><h2>{preparing ? 'Get into character!' : 'Talk it out!'}</h2><p>{preparing ? 'Read your role and think of helpful language.' : 'Work together to complete the challenge.'}</p></div><Timer remaining={left} total={preparing ? PREP_SECONDS : 300} label={preparing ? 'PREP' : 'LEFT'} danger={!preparing}/></div><RoleCards topic={topic}/><div className="actions">{preparing ? <><Button kind="secondary" onClick={() => setPhase('choose')}><ArrowLeft size={18}/> Change topic</Button><Button onClick={() => { setLeft(300); setPhase('talk'); }}>Start talking <ArrowRight size={18}/></Button></> : <><Button kind="secondary" onClick={() => setPaused(value => !value)}>{paused ? <Play size={18}/> : <Pause size={18}/>} {paused ? 'Resume' : 'Pause'}</Button><Button kind="danger" onClick={() => setPhase('done')}><Check size={18}/> Finish early</Button></>}</div></section>;
+}
+
+function RoleCards({ topic, preview = false }: { topic: typeof roleTopics[number]; preview?: boolean }) { return <div className={`role-cards ${preview ? 'role-preview' : ''}`}><div className="role-title"><span className="eyebrow purple">ROLE PLAY</span><h3>{topic.title}</h3></div><div className="players"><article className="player player-a"><span>STUDENT A · {topic.aRole}</span><p>{topic.aText}</p><strong>YOUR GOAL</strong><b>{topic.aGoal}</b></article><article className="player player-b"><span>STUDENT B · {topic.bRole}</span><p>{topic.bText}</p><strong>YOUR GOAL</strong><b>{topic.bGoal}</b></article></div><div className="challenge"><Trophy size={18}/><div><strong>CHALLENGE</strong><p>{topic.challenge}</p></div></div></div>; }
 
 function SpeakingSample({ back }: { back: () => void }) {
   const [topic, setTopic] = useState(topics[0]), [phase, setPhase] = useState<'choose'|'prep'|'speak'|'done'>('choose'), [left, setLeft] = useState(30), [paused, setPaused] = useState(false);
@@ -17,8 +39,8 @@ function SpeakingSample({ back }: { back: () => void }) {
   const prep = phase === 'prep'; return <section className="page stage sample-stage"><div className="stage-top"><div><span className="eyebrow"><Mic size={15}/> {prep ? 'PREPARATION TIME' : 'SPEAKING SAMPLE'}</span><h2>{prep ? 'Get ready!' : 'Speak now!'}</h2><p>{prep ? 'Think of ideas, examples, and useful vocabulary.' : 'Share your ideas clearly and in detail.'}</p></div><Timer remaining={left} total={prep ? 30 : 180} label={prep ? 'PREP' : 'LEFT'} danger={!prep}/></div><div className="prompt-box"><span>TOPIC</span><h3>{topic.title}</h3><p>{topic.prompt}</p></div><div className="actions">{prep ? <Button onClick={() => { setLeft(180); setPhase('speak'); }}>Skip prep <ArrowRight size={18}/></Button> : <><Button kind="secondary" onClick={() => setPaused(!paused)}>{paused ? <Play size={18}/> : <Pause size={18}/>} {paused ? 'Resume' : 'Pause'}</Button><Button kind="danger" onClick={() => setPhase('done')}>Finish early</Button></>}</div></section>;
 }
 
-function PracticeDashboard({ picture, sample }: { picture: () => void; sample: () => void }) {
-  return <section className="page"><div className="hero"><div><span className="eyebrow"><Sparkles size={15}/> YOUR SPEAKING SPACE</span><h2>What would you like<br/>to practice today?</h2><p>Small speaking moments add up to big confidence.</p></div><Mascot /></div><div className="modules"><button className="module featured" onClick={picture}><i><Camera size={30}/></i><div><em>PICTURE PRACTICE</em><h3>Talk about the Picture</h3><p>Look closely, find the words, and speak freely.</p></div><ChevronRight /></button><button className="module sample-module" onClick={sample}><i><Mic size={29}/></i><div><em>NEW</em><h3>Speaking Sample</h3><p>Prepare for 30 seconds, then speak for 3 minutes.</p></div><ChevronRight /></button></div></section>;
+function PracticeDashboard({ picture, sample, roleplay }: { picture: () => void; sample: () => void; roleplay: () => void }) {
+  return <section className="page"><div className="hero"><div><span className="eyebrow"><Sparkles size={15}/> YOUR SPEAKING SPACE</span><h2>What would you like<br/>to practice today?</h2><p>Small speaking moments add up to big confidence.</p></div><Mascot /></div><div className="modules"><button className="module featured" onClick={picture}><i><Camera size={30}/></i><div><em>PICTURE PRACTICE</em><h3>Talk about the Picture</h3><p>Look closely, find the words, and speak freely.</p></div><ChevronRight /></button><button className="module sample-module" onClick={sample}><i><Mic size={29}/></i><div><em>NEW</em><h3>Speaking Sample</h3><p>Prepare for 30 seconds, then speak for 3 minutes.</p></div><ChevronRight /></button><button className="module roleplay-module" onClick={roleplay}><i><Users size={29}/></i><div><em>FUNGLISH</em><h3>Role Play</h3><p>Take a role, solve a challenge, and talk together.</p></div><ChevronRight /></button></div></section>;
 }
 
 function SetupList({ image, select, libraryImages, libraryLoaded, pickLibrary, start, back }: { image:string|null;select:(e:ChangeEvent<HTMLInputElement>)=>void;libraryImages:string[];libraryLoaded:boolean;pickLibrary:(src:string)=>void;start:()=>void;back:()=>void }) {
@@ -47,8 +69,9 @@ export default function Home() {
   function finish() { if (recorder.current?.state && recorder.current.state !== 'inactive') recorder.current.stop(); setScreen('done'); }
   function reset() { recorder.current?.stop(); if (image) URL.revokeObjectURL(image); setImage(null); setAudioUrl(null); setScreen('setup'); }
   return <main><header className="topbar"><div className="brand"><Mascot small /><div><h1>Duolingi</h1><p>Build confidence, one conversation at a time.</p></div></div><nav><button className="active">Practice</button><button>Progress</button><button>Tips</button></nav><div className="streak">🔥 <b>7</b><small>day streak</small></div></header>
-    {screen === 'dashboard' && <PracticeDashboard picture={() => setScreen('setup')} sample={() => setScreen('sample')} />}
+    {screen === 'dashboard' && <PracticeDashboard picture={() => setScreen('setup')} sample={() => setScreen('sample')} roleplay={() => setScreen('roleplay')} />}
     {screen === 'sample' && <SpeakingSample back={() => setScreen('dashboard')} />}
+    {screen === 'roleplay' && <RolePlay back={() => setScreen('dashboard')} />}
     {screen === 'setup' && <SetupList image={image} select={fileSelected} libraryImages={libraryImages} libraryLoaded={libraryLoaded} pickLibrary={selectLibraryImage} start={() => image && setScreen('prep')} back={() => setScreen('dashboard')} />}
     {screen === 'prep' && image && <Stage image={image} prep left={prepLeft} skip={startSpeaking} back={() => setScreen('setup')} />}
     {screen === 'speak' && image && <Stage image={image} left={speakLeft} paused={paused} pause={() => { paused ? recorder.current?.resume() : recorder.current?.pause(); setPaused(!paused); }} finish={finish} restart={() => { recorder.current?.stop(); setSpeakLeft(SPEAK_SECONDS); setElapsed(0); startSpeaking(); }} />}
