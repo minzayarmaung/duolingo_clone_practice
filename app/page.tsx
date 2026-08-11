@@ -174,6 +174,7 @@ function VideoLesson({ back }: { back: () => void }) {
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [theatreMode, setTheatreMode] = useState(false);
   const playerContainer = useRef<HTMLDivElement | null>(null);
 
   const getVideoId = (url: string) => {
@@ -191,10 +192,19 @@ function VideoLesson({ back }: { back: () => void }) {
       if (!win.YT || !win.YT.Player || !playerContainer.current) return;
       if (player) return;
       const newPlayer = new win.YT.Player(playerContainer.current, {
-        height: '360',
-        width: '640',
+        height: '100%',
+        width: '100%',
         videoId,
-        playerVars: { controls: 0, modestbranding: 1, rel: 0 },
+        playerVars: {
+          controls: 1,
+          modestbranding: 1,
+          rel: 0,
+          iv_load_policy: 3,
+          disablekb: 1,
+          fs: 0,
+          playsinline: 1,
+          showinfo: 0,
+        },
         events: {
           onReady: () => {
             setPlayerReady(true);
@@ -258,7 +268,7 @@ function VideoLesson({ back }: { back: () => void }) {
     forward: () => { if (player) { player.seekTo(Math.min((player.getDuration() || 0), player.getCurrentTime() + 10), true); } },
   };
 
-  return <section className="page sample video-page"><button className="back" onClick={back}><ArrowLeft size={17}/> ALL MODULES</button><div className="heading"><span className="eyebrow"><Play size={15}/> VIDEO LESSON</span><h2>{selectedLesson.title}</h2><p>{selectedLesson.description}</p></div><div className="video-layout"><div className="topic-list video-list"><div className="library-title"><h3>Video lessons</h3></div>{lessons.map(lesson => <button className={`topic-row ${selectedLesson.id === lesson.id ? 'chosen' : ''}`} key={lesson.id} onClick={() => setSelectedLesson(lesson)}><span>{lesson.title}</span>{selectedLesson.id === lesson.id && <Check size={17}/>}</button>)}</div><div className="video-pane"><div className="video-player"><div ref={playerContainer} className="youtube-frame" /></div><div className="video-controls"><div className="control-buttons"><button onClick={controls.back}>⏪ 10s</button><button onClick={playing ? controls.pause : controls.play}>{playing ? 'Pause' : 'Play'}</button><button onClick={controls.forward}>10s ⏩</button></div><div className="video-timer"><span>{Math.floor(currentTime / 60)}:{String(Math.floor(currentTime % 60)).padStart(2,'0')}</span><span>/</span><span>{Math.floor(duration / 60)}:{String(Math.floor(duration % 60)).padStart(2,'0')}</span></div></div></div></div></section>;
+  return <section className="page sample video-page"><button className="back" onClick={back}><ArrowLeft size={17}/> ALL MODULES</button><div className="heading"><span className="eyebrow"><Play size={15}/> VIDEO LESSON</span><h2>{selectedLesson.title}</h2><p>{selectedLesson.description}</p></div><div className={`video-layout${theatreMode ? ' theatre' : ''}`}><div className="topic-list video-list"><div className="library-title"><h3>Video lessons</h3></div>{lessons.map(lesson => <button className={`topic-row ${selectedLesson.id === lesson.id ? 'chosen' : ''}`} key={lesson.id} onClick={() => setSelectedLesson(lesson)}><span>{lesson.title}</span>{selectedLesson.id === lesson.id && <Check size={17}/>}</button>)}</div><div className="video-pane"><div className={`video-player${theatreMode ? ' theatre' : ''}`}><div ref={playerContainer} className="youtube-frame" /></div><div className="video-controls"><div className="control-buttons"><button onClick={controls.back}>⏪ 10s</button><button onClick={playing ? controls.pause : controls.play}>{playing ? 'Pause' : 'Play'}</button><button onClick={controls.forward}>10s ⏩</button><button onClick={() => setTheatreMode(value => !value)}>{theatreMode ? 'Exit Theatre' : 'Theatre Mode'}</button></div><div className="video-timer"><span>{Math.floor(currentTime / 60)}:{String(Math.floor(currentTime % 60)).padStart(2,'0')}</span><span>/</span><span>{Math.floor(duration / 60)}:{String(Math.floor(duration % 60)).padStart(2,'0')}</span></div></div></div></div></section>;
 }
 
 function Button({ children, onClick, kind = 'primary' }: { children: React.ReactNode; onClick?: () => void; kind?: 'primary' | 'secondary' | 'danger' }) {

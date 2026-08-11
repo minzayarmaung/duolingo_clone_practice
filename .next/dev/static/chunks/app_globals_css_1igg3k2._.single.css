@@ -260,6 +260,14 @@
 @layer components;
 
 @layer utilities {
+  .static {
+    position: static;
+  }
+
+  .hidden {
+    display: none;
+  }
+
   .grow {
     flex-grow: 1;
   }
@@ -1051,6 +1059,78 @@ nav .active {
   .taboo-target h3 {
     font-size: 30px;
   }
+}
+
+.login-page {
+  place-items: center;
+  min-height: calc(100vh - 82px);
+  padding: 40px 0;
+  display: grid;
+}
+
+.login-box {
+  text-align: center;
+  background: #fff;
+  border: 2px solid #e4e7e9;
+  border-bottom-width: 6px;
+  border-radius: 28px;
+  width: min(100%, 420px);
+  padding: 40px;
+  box-shadow: 0 22px 54px #0d182614;
+}
+
+.login-box h1 {
+  color: #263140;
+  margin: 18px 0 8px;
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.05;
+}
+
+.login-box p {
+  color: #666f7e;
+  margin: 0 0 28px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.login-form {
+  gap: 18px;
+  display: grid;
+}
+
+.login-form label {
+  text-align: left;
+  color: #5c697d;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  display: grid;
+}
+
+.login-form input {
+  color: #27313f;
+  background: #fafbfd;
+  border: 2px solid #d8dee3;
+  border-radius: 16px;
+  width: 100%;
+  padding: 15px 18px;
+  font-size: 15px;
+}
+
+.login-form input:focus {
+  border-color: #58cc02;
+  outline: none;
+  box-shadow: 0 0 0 4px #58cc021f;
+}
+
+.login-error {
+  color: #c42f2f;
+  margin: 0;
+  font-size: 14px;
+}
+
+.login-page .btn-primary {
+  width: 100%;
 }
 
 /*# sourceMappingURL=app_globals_css_1igg3k2._.single.css.map*/
