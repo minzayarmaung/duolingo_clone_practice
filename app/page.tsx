@@ -6,8 +6,17 @@ import topics from './data/speaking-topics.json';
 import roleTopics from './data/roleplay-topics.json';
 import tabooCardsData from './data/taboo-cards.json';
 import twentyQuestionsData from './data/twenty-questions-items.json';
+import youtubeLessons from './data/youtube-lessons.json';
 
-type Screen = 'dashboard' | 'setup' | 'prep' | 'speak' | 'done' | 'sample' | 'roleplay' | 'taboo' | 'twenty';
+type Screen = 'dashboard' | 'setup' | 'prep' | 'speak' | 'done' | 'sample' | 'roleplay' | 'taboo' | 'twenty' | 'video';
+
+type Lesson = {
+  id: string;
+  title: string;
+  url: string;
+  description: string;
+};
+
 const PREP_SECONDS = 20;
 const SPEAK_SECONDS = 90;
 const TABOO_SECONDS = 60;
@@ -54,8 +63,8 @@ function SpeakingSample({ back }: { back: () => void }) {
   const prep = phase === 'prep'; return <section className="page stage sample-stage"><div className="stage-top"><div><span className="eyebrow"><Mic size={15}/> {prep ? 'PREPARATION TIME' : 'SPEAKING SAMPLE'}</span><h2>{prep ? 'Get ready!' : 'Speak now!'}</h2><p>{prep ? 'Think of ideas, examples, and useful vocabulary.' : 'Share your ideas clearly and in detail.'}</p></div><Timer remaining={left} total={prep ? 30 : 180} label={prep ? 'PREP' : 'LEFT'} danger={!prep}/></div><div className="prompt-box"><span>TOPIC</span><h3>{topic.title}</h3><p>{topic.prompt}</p></div><div className="actions">{prep ? <Button onClick={() => { setLeft(180); setPhase('speak'); }}>Skip prep <ArrowRight size={18}/></Button> : <><Button kind="secondary" onClick={() => setPaused(!paused)}>{paused ? <Play size={18}/> : <Pause size={18}/>} {paused ? 'Resume' : 'Pause'}</Button><Button kind="danger" onClick={() => setPhase('done')}>Finish early</Button></>}</div></section>;
 }
 
-function PracticeDashboard({ picture, sample, roleplay, taboo, twenty }: { picture: () => void; sample: () => void; roleplay: () => void; taboo: () => void; twenty: () => void }) {
-  return <section className="page"><div className="hero"><div><span className="eyebrow"><Sparkles size={15}/> YOUR SPEAKING SPACE</span><h2>What would you like<br/>to practice today?</h2><p>Small speaking moments add up to big confidence.</p></div><Mascot /></div><div className="modules"><button className="module featured" onClick={picture}><i><Camera size={30}/></i><div><em>PICTURE PRACTICE</em><h3>Talk about the Picture</h3><p>Look closely, find the words, and speak freely.</p></div><ChevronRight /></button><button className="module sample-module" onClick={sample}><i><Mic size={29}/></i><div><em>NEW</em><h3>Speaking Sample</h3><p>Prepare for 30 seconds, then speak for 3 minutes.</p></div><ChevronRight /></button><button className="module roleplay-module" onClick={roleplay}><i><Users size={29}/></i><div><em>FUNGLISH</em><h3>Role Play</h3><p>Take a role, solve a challenge, and talk together.</p></div><ChevronRight /></button><button className="module taboo-module" onClick={taboo}><i><Sparkles size={29}/></i><div><em>FUNGLISH</em><h3>Taboo Game</h3><p>Describe the target word and avoid the forbidden words.</p></div><ChevronRight /></button><button className="module twenty-module" onClick={twenty}><i><Users size={29}/></i><div><em>FUNGLISH</em><h3>20 Questions</h3><p>Guess the hidden item by asking smart yes-or-no questions.</p></div><ChevronRight /></button></div></section>;
+function PracticeDashboard({ picture, sample, roleplay, taboo, twenty, video }: { picture: () => void; sample: () => void; roleplay: () => void; taboo: () => void; twenty: () => void; video: () => void }) {
+  return <section className="page"><div className="hero"><div><span className="eyebrow"><Sparkles size={15}/> YOUR SPEAKING SPACE</span><h2>What would you like<br/>to practice today?</h2><p>Small speaking moments add up to big confidence.</p></div><Mascot /></div><div className="modules"><button className="module featured" onClick={picture}><i><Camera size={30}/></i><div><em>PICTURE PRACTICE</em><h3>Talk about the Picture</h3><p>Look closely, find the words, and speak freely.</p></div><ChevronRight /></button><button className="module sample-module" onClick={sample}><i><Mic size={29}/></i><div><em>NEW</em><h3>Speaking Sample</h3><p>Prepare for 30 seconds, then speak for 3 minutes.</p></div><ChevronRight /></button><button className="module video-module" onClick={video}><i><Play size={29}/></i><div><em>NEW</em><h3>Video Lesson</h3><p>Watch a clip and speak about what you would do.</p></div><ChevronRight /></button><button className="module roleplay-module" onClick={roleplay}><i><Users size={29}/></i><div><em>FUNGLISH</em><h3>Role Play</h3><p>Take a role, solve a challenge, and talk together.</p></div><ChevronRight /></button><button className="module taboo-module" onClick={taboo}><i><Sparkles size={29}/></i><div><em>FUNGLISH</em><h3>Taboo Game</h3><p>Describe the target word and avoid the forbidden words.</p></div><ChevronRight /></button><button className="module twenty-module" onClick={twenty}><i><Users size={29}/></i><div><em>FUNGLISH</em><h3>20 Questions</h3><p>Guess the hidden item by asking smart yes-or-no questions.</p></div><ChevronRight /></button></div></section>;
 }
 
 function SetupList({ image, select, libraryImages, libraryLoaded, pickLibrary, start, back }: { image:string|null;select:(e:ChangeEvent<HTMLInputElement>)=>void;libraryImages:string[];libraryLoaded:boolean;pickLibrary:(src:string)=>void;start:()=>void;back:()=>void }) {
@@ -157,6 +166,101 @@ function TwentyQuestions({ back }: { back: () => void }) {
   return <section className="page stage taboo-stage"><div className="stage-top"><div><span className="eyebrow purple"><Sparkles size={15}/> 20 QUESTIONS</span><h2>Ask smart questions!</h2><p>Try to guess {item.name} with yes-or-no questions before the timer ends.</p></div><Timer remaining={left} total={TWENTY_QUESTIONS_SECONDS} label="LEFT" danger /></div><div className="taboo-board"><div className="taboo-target"><span className="eyebrow purple">SECRET ITEM</span><h3>{item.name}</h3></div><div className="taboo-forbidden"><span className="eyebrow">GAME RULES</span><div className="forbidden-list"><span className="forbidden-pill">Only yes/no questions</span><span className="forbidden-pill">One person knows the item</span><span className="forbidden-pill">Guess before time runs out</span></div></div></div><div className="actions"><Button kind="secondary" onClick={() => setPaused(value => !value)}>{paused ? <Play size={18}/> : <Pause size={18}/>} {paused ? 'Resume' : 'Pause'}</Button><Button onClick={nextItem}>Next item <ArrowRight size={18}/></Button><Button kind="danger" onClick={() => setPhase('done')}><Check size={18}/> Finish</Button></div></section>;
 }
 
+function VideoLesson({ back }: { back: () => void }) {
+  const lessons = youtubeLessons as Lesson[];
+  const [selectedLesson, setSelectedLesson] = useState<Lesson>(lessons[0]);
+  const [player, setPlayer] = useState<any>(null);
+  const [playerReady, setPlayerReady] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const playerContainer = useRef<HTMLDivElement | null>(null);
+
+  const getVideoId = (url: string) => {
+    const match = url.match(/[?&]v=([^&]+)/);
+    return match ? match[1] : url.split('/').pop() ?? '';
+  };
+
+  const videoId = getVideoId(selectedLesson.url);
+
+  useEffect(() => {
+    const scriptId = 'youtube-iframe-api';
+    const win = window as any;
+
+    const create = () => {
+      if (!win.YT || !win.YT.Player || !playerContainer.current) return;
+      if (player) return;
+      const newPlayer = new win.YT.Player(playerContainer.current, {
+        height: '360',
+        width: '640',
+        videoId,
+        playerVars: { controls: 0, modestbranding: 1, rel: 0 },
+        events: {
+          onReady: () => {
+            setPlayerReady(true);
+            setDuration(newPlayer.getDuration());
+          },
+          onStateChange: (event: any) => {
+            const state = event.data;
+            setPlaying(state === win.YT.PlayerState.PLAYING);
+            if (state === win.YT.PlayerState.PLAYING) {
+              setDuration(newPlayer.getDuration());
+            }
+          },
+        },
+      });
+      setPlayer(newPlayer);
+    };
+
+    if (!document.getElementById(scriptId)) {
+      const tag = document.createElement('script');
+      tag.id = scriptId;
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.body.appendChild(tag);
+    }
+
+    if (win.YT && win.YT.Player) {
+      create();
+    } else {
+      win.onYouTubeIframeAPIReady = create;
+    }
+
+    return () => {
+      if (player) {
+        player.destroy();
+        setPlayer(null);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!player || !playerReady) return;
+    player.loadVideoById(videoId);
+    setPlaying(false);
+    setCurrentTime(0);
+    setDuration(player.getDuration() || 0);
+  }, [videoId, player, playerReady]);
+
+  useEffect(() => {
+    if (!player) return;
+    const interval = window.setInterval(() => {
+      if (player && player.getCurrentTime) {
+        setCurrentTime(player.getCurrentTime());
+      }
+    }, 500);
+    return () => window.clearInterval(interval);
+  }, [player]);
+
+  const controls = {
+    play: () => { if (player) { player.playVideo(); } },
+    pause: () => { if (player) { player.pauseVideo(); } },
+    back: () => { if (player) { player.seekTo(Math.max(0, player.getCurrentTime() - 10), true); } },
+    forward: () => { if (player) { player.seekTo(Math.min((player.getDuration() || 0), player.getCurrentTime() + 10), true); } },
+  };
+
+  return <section className="page sample video-page"><button className="back" onClick={back}><ArrowLeft size={17}/> ALL MODULES</button><div className="heading"><span className="eyebrow"><Play size={15}/> VIDEO LESSON</span><h2>{selectedLesson.title}</h2><p>{selectedLesson.description}</p></div><div className="video-layout"><div className="topic-list video-list"><div className="library-title"><h3>Video lessons</h3></div>{lessons.map(lesson => <button className={`topic-row ${selectedLesson.id === lesson.id ? 'chosen' : ''}`} key={lesson.id} onClick={() => setSelectedLesson(lesson)}><span>{lesson.title}</span>{selectedLesson.id === lesson.id && <Check size={17}/>}</button>)}</div><div className="video-pane"><div className="video-player"><div ref={playerContainer} className="youtube-frame" /></div><div className="video-controls"><div className="control-buttons"><button onClick={controls.back}>⏪ 10s</button><button onClick={playing ? controls.pause : controls.play}>{playing ? 'Pause' : 'Play'}</button><button onClick={controls.forward}>10s ⏩</button></div><div className="video-timer"><span>{Math.floor(currentTime / 60)}:{String(Math.floor(currentTime % 60)).padStart(2,'0')}</span><span>/</span><span>{Math.floor(duration / 60)}:{String(Math.floor(duration % 60)).padStart(2,'0')}</span></div></div></div></div></section>;
+}
+
 function Button({ children, onClick, kind = 'primary' }: { children: React.ReactNode; onClick?: () => void; kind?: 'primary' | 'secondary' | 'danger' }) {
   return <button onClick={onClick} className={`btn btn-${kind}`}>{children}</button>;
 }
@@ -178,8 +282,9 @@ export default function Home() {
   function finish() { if (recorder.current?.state && recorder.current.state !== 'inactive') recorder.current.stop(); setScreen('done'); }
   function reset() { recorder.current?.stop(); if (image) URL.revokeObjectURL(image); setImage(null); setAudioUrl(null); setScreen('setup'); }
   return <main><header className="topbar"><div className="brand"><Mascot small /><div><h1>Duolingi</h1><p>Build confidence, one conversation at a time.</p></div></div><nav><button className="active">Practice</button><button>Progress</button><button>Tips</button></nav><div className="streak">🔥 <b>7</b><small>day streak</small></div></header>
-    {screen === 'dashboard' && <PracticeDashboard picture={() => setScreen('setup')} sample={() => setScreen('sample')} roleplay={() => setScreen('roleplay')} taboo={() => setScreen('taboo')} twenty={() => setScreen('twenty')} />}
+    {screen === 'dashboard' && <PracticeDashboard picture={() => setScreen('setup')} sample={() => setScreen('sample')} video={() => setScreen('video')} roleplay={() => setScreen('roleplay')} taboo={() => setScreen('taboo')} twenty={() => setScreen('twenty')} />}
     {screen === 'sample' && <SpeakingSample back={() => setScreen('dashboard')} />}
+    {screen === 'video' && <VideoLesson back={() => setScreen('dashboard')} />}
     {screen === 'roleplay' && <RolePlay back={() => setScreen('dashboard')} />}
     {screen === 'taboo' && <TabooGame back={() => setScreen('dashboard')} />}
     {screen === 'twenty' && <TwentyQuestions back={() => setScreen('dashboard')} />}
